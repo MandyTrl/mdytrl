@@ -6,6 +6,17 @@
   background-color: #ffdb27;
 }
 
+/* use this class for hide scrollbar on element */
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safara, Opera */
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
 body {
   background-color: #ffff;
 
@@ -16,6 +27,7 @@ body {
   scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
 }
 
+/* style scrollbar */
 body::-webkit-scrollbar {
   width: var(--sb-size);
 }
@@ -28,4 +40,22 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: var(--sb-thumb-color);
   border-radius: 20px;
+}
+
+/* animation for stacks cards container */
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.animate-scrolling {
+  animation: scroll 300s linear infinite;
+}
+
+.fade-stacks-cards {
+  background: radial-gradient(circle, transparent 70%, #ffffff 100%);
 }

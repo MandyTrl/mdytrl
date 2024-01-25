@@ -11,9 +11,16 @@ const config: Config = {
       fontFamily: {
         soria: ['var(--font-soria)'],
         generalSans: ['var(--font-general-sans)']
+      },
+      colors: {
+        yellowPrimary: '#FFDB27',
+        yellowSecondary: '#FFF8D6',
+        darkPrimary: '#040421',
+        grayPrimary: '#575467',
+        graySecondary: '#E0E0F5'
       }
     }
   },
-  plugins: []
+  plugins: [require('tailwindcss-gradients')]
 }
 export default config
