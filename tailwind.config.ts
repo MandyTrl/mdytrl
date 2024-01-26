@@ -13,11 +13,11 @@ const config: Config = {
         generalSans: ['var(--font-general-sans)']
       },
       colors: {
-        yellowPrimary: '#FFDB27',
-        yellowSecondary: '#FFF8D6',
-        darkPrimary: '#040421',
-        grayPrimary: '#575467',
-        graySecondary: '#E0E0F5'
+        'yel-primary': '#FFDB27',
+        'yel-secondary': '#FFF8D6',
+        primary: '#040421',
+        'gray-primary': '#575467',
+        'gray-secondary': '#E0E0F5'
       }
     }
   },

@@ -44,14 +44,14 @@ export const generalSans = localFont({
       style: 'normal'
     },
     {
-      path: '../../public/fonts/General Sans/GeneralSans-LightItalic.otf',
-      weight: '300',
-      style: 'normal'
-    },
-    {
       path: '../../public/fonts/General Sans/GeneralSans-ExtralightItalic.otf',
       weight: '200',
-      style: 'normal'
+      style: 'italic'
+    },
+    {
+      path: '../../public/fonts/General Sans/GeneralSans-LightItalic.otf',
+      weight: '300',
+      style: 'italic'
     },
     {
       path: '../../public/fonts/General Sans/GeneralSans-Italic.otf',
@@ -71,7 +71,7 @@ export const generalSans = localFont({
     {
       path: '../../public/fonts/General Sans/GeneralSans-BoldItalic.otf',
       weight: '700',
-      style: 'normal'
+      style: 'italic'
     }
   ],
   variable: '--font-general-sans'

@@ -5,13 +5,13 @@ export const Stacks = () => {
   const triplicatedStacks = stacks.concat(stacks, stacks)
 
   return (
-    <aside className="max-h-[450px] overflow-hidden no-scrollbar relative">
+    <aside className="max-h-[450px] w-fit overflow-hidden no-scrollbar relative">
       <div className="animate-scrolling">
         {stacks.map((stack: stackType, index) => {
           return (
             <div
               key={stack.name}
-              className="p-4 my-2 flex flex-col justify-around items-center border border-graySecondary border-solid rounded-lg"
+              className="p-4 my-2 flex flex-col justify-around items-center border border-gray-secondary border-solid rounded-lg"
             >
               <Image src={stack.logo} alt={`logo_${stack.name}`} width={40} height={40} />
               <p className="text-sm">{stack.name}</p>
@@ -22,7 +22,7 @@ export const Stacks = () => {
           return (
             <div
               key={stack.name}
-              className="p-4 my-2 flex flex-col justify-around items-center border border-graySecondary border-solid rounded-lg"
+              className="p-4 my-2 flex flex-col justify-around items-center border border-gray-secondary border-solid rounded-lg"
             >
               <Image src={stack.logo} alt={`logo_${stack.name}`} width={40} height={40} />
               <p className="text-sm">{stack.name}</p>

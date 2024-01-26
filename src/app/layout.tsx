@@ -21,10 +21,8 @@ export default function RootLayout({
       </head>
       <body className={`${soria.variable} ${generalSans.variable}`}>
         <Navbar />
-        <div className="mx-80 pt-16">
-          {children}
-          <Footer />
-        </div>
+        <div className="mx-96 pt-16 border-b border-solid border-b-gray-secondary">{children}</div>
+        <Footer />
       </body>
     </html>
   )
