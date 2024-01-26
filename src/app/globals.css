@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 :root {
-  background-color: #ffdb27;
+  --dark-color: #040421;
+  --yellow-color: #ffdb27;
+  background-color: var(--yellow-color);
 }
 
 /* use this class for hide scrollbar on element */
@@ -19,17 +21,14 @@
 
 body {
   background-color: #ffff;
-  --dark-color: #040421;
-  --yellow-color: #ffdb27;
-  --sb-size: 4px;
   color: var(--dark-color);
-
+  /* cursor: none; */
   scrollbar-color: var(--yellow-color) var(--dark-color);
 }
 
 /* style scrollbar */
 body::-webkit-scrollbar {
-  width: var(--sb-size);
+  width: 4px;
 }
 
 body::-webkit-scrollbar-track {

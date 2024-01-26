@@ -1,4 +1,5 @@
 export type stackType = {
+  id?: string
   name: string
   logo: string
 }

@@ -1,16 +1,17 @@
 import Image from 'next/image'
+import { v4 as uuidv4 } from 'uuid'
 import { stackType, stacks } from '@/utils/stacks.ts'
 
 export const Stacks = () => {
-  const triplicatedStacks = stacks.concat(stacks, stacks)
+  const stacksWithUniqueIds = stacks.map((stack) => ({ ...stack, id: uuidv4() }))
 
   return (
     <aside className="max-h-[450px] w-fit overflow-hidden no-scrollbar relative">
       <div className="animate-scrolling">
-        {stacks.map((stack: stackType, index) => {
+        {stacksWithUniqueIds.map((stack: stackType) => {
           return (
             <div
-              key={stack.name}
+              key={`${stack.name}_${stack.id}`}
               className="p-4 my-2 flex flex-col justify-around items-center border border-gray-secondary border-solid rounded-lg"
             >
               <Image src={stack.logo} alt={`logo_${stack.name}`} width={40} height={40} />
@@ -18,10 +19,10 @@ export const Stacks = () => {
             </div>
           )
         })}
-        {triplicatedStacks.map((stack: stackType, index) => {
+        {stacksWithUniqueIds.map((stack: stackType) => {
           return (
             <div
-              key={stack.name}
+              key={`${stack.id}_${stack.name}`}
               className="p-4 my-2 flex flex-col justify-around items-center border border-gray-secondary border-solid rounded-lg"
             >
               <Image src={stack.logo} alt={`logo_${stack.name}`} width={40} height={40} />

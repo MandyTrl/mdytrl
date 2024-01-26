@@ -10,7 +10,7 @@ export const LocalTime = () => {
   return (
     <aside className="border border-l-transparent border-r-transparent border-solid border-primary py-4">
       <p className="font-soria text-6xl">
-        {date} {month} {year} {time}
+        {date} {month}. {year} {time}
       </p>
     </aside>
   )
