@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import { v4 as uuidv4 } from 'uuid'
-import { stackType, stacks } from '@/utils/stacks.ts'
+import { stackType, stacks } from '@/utils/datas/stacks'
 
 export const Stacks = () => {
   const stacksWithUniqueIds = stacks.map((stack) => ({ ...stack, id: uuidv4() }))
 
   return (
-    <aside className="max-h-[450px] w-fit overflow-hidden no-scrollbar relative">
+    <div className="w-fit overflow-hidden no-scrollbar relative">
       <div className="animate-scrolling">
         {stacksWithUniqueIds.map((stack: stackType) => {
           return (
@@ -32,6 +32,6 @@ export const Stacks = () => {
         })}
       </div>
       <div className="gradient-overlay absolute top-0 left-0 w-full h-full fade-stacks-cards"></div>
-    </aside>
+    </div>
   )
 }

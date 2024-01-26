@@ -21,7 +21,7 @@ export const Footer = () => {
 
       <div>
         <p className="text-gray-primary uppercase text-xs font-semibold font-soria">last update</p>
-        <p className="border-l border-l-yel-primary pl-2">jan. 2024</p>
+        <p className="border-r border-r-yel-primary pr-2">jan. 2024</p>
       </div>
     </footer>
   )

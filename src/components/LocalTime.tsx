@@ -8,7 +8,7 @@ export const LocalTime = () => {
   const time = today.getHours() + ':' + today.getMinutes()
 
   return (
-    <aside className="border border-l-transparent border-r-transparent border-solid border-primary py-4">
+    <aside className="border-y border-l-transparent border-r-transparent border-solid border-primary py-4">
       <p className="font-soria text-6xl">
         {date} {month}. {year} {time}
       </p>

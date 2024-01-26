@@ -27,5 +27,6 @@ export const stacks: stackType[] = [
   { name: 'Jira', logo: '/assets/stacks/jira.svg' },
   { name: 'Postman', logo: '/assets/stacks/postman.svg' },
   { name: 'Figma', logo: '/assets/stacks/figma.svg' },
-  { name: 'Notion', logo: '/assets/stacks/notion.svg' }
+  { name: 'Notion', logo: '/assets/stacks/notion.svg' },
+  { name: 'Lighthouse', logo: '/assets/stacks/lighthouse.svg' }
 ]
