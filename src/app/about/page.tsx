@@ -14,7 +14,7 @@ export default function About() {
         <p className="w-2/4 ml-6">
           Après une belle expérience dans le service client où l’adage est : “À chaque problème, sa solution”, j’ai
           voulu renouer avec ma créativité en la mêlant à ma vie professionnelle. <br></br>
-          <br></br>C’est donc naturellement qu’en 2022 je me suis reconvertie dans le développement !”
+          <br></br>C’est donc naturellement qu’en 2022 je me suis reconvertie dans le développement 💻 !
         </p>
       </div>
     </main>

@@ -52,7 +52,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .animate-scrolling {
-  animation: scroll 300s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 .fade-stacks-cards {
