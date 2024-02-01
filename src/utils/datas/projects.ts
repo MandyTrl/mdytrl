@@ -8,7 +8,7 @@ export const projects = [
   },
   {
     name: 'Kasa',
-    type: 'Formation',
+    type: 'OpenClassRooms',
     stacks: ['React', 'Typescript', 'Sass'],
     description: 'Application web répertoriant des annonces immobilières',
     skills_developed: [
@@ -22,11 +22,11 @@ export const projects = [
   },
   {
     name: 'Mon vieux grimoire',
-    type: 'Formation',
+    type: 'OpenClassRooms',
     stacks: ['NodeJS', 'Express', 'MongoDB', 'Mongoose'],
     description: "Création d'une API Rest pour un site de notation de livres",
     skills_developed: [
-      'Création et gestion des routes, des controlleurs ainsi que des middlewares',
+      'Création et gestion de routes, controlleurs et middlewares',
       'Stocker des données de manière sécurisée (token, hashage de mdp..)',
       "Création de schemas et modélisation d'une BDD",
       "Utilisation de l'ORM Mongoose pour traiter les données",
@@ -37,7 +37,7 @@ export const projects = [
   },
   {
     name: 'Sophie Buel',
-    type: 'Formation',
+    type: 'OpenClassRooms',
     stacks: ['JavaScript', 'CSS'],
     description: "Portfolio d'une architecte d'intérieur",
     skills_developed: [
@@ -50,7 +50,7 @@ export const projects = [
   },
   {
     name: 'Nina Carducci',
-    type: 'Formation',
+    type: 'OpenClassRooms',
     stacks: ['HTML', 'SEO'],
     description: "Porfolio d'une photographe",
     skills_developed: [
@@ -63,7 +63,7 @@ export const projects = [
   },
   {
     name: 'Booki',
-    type: 'Formation',
+    type: 'OpenClassRooms',
     stacks: ['HTML', 'CSS'],
     description: 'Site vitrine proposant des hébergements et activités dans la ville de son choix',
     skills_developed: ["Implémenter du contenu conformément à une maquette et l'adapter en responsive"],

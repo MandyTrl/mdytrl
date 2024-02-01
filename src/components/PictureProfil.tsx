@@ -1,19 +1,13 @@
-'use client'
 import Image from 'next/image'
-import { useState } from 'react'
 
 export default function ProfilPicture() {
-  const [isHovering, setIsHovered] = useState(false)
-  const onMouseEnter = () => setIsHovered(true)
-  const onMouseLeave = () => setIsHovered(false)
-
   return (
-    <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-      {isHovering ? (
-        <Image alt="Mandy Thorel" src="/assets/mdytrl.webp" width={368} height={624} />
-      ) : (
-        <Image alt="Mandy Thorel, photo en noir et blanc" src="/assets/mdytrlb&w.webp" width={368} height={624} />
-      )}
-    </div>
+    <Image
+      alt="Mandy Thorel, photo en noir et blanc"
+      src="/assets/mdytrl.webp"
+      width={568}
+      height={824}
+      className="drop-shadow transition ease-in-out duration-700	saturate-0 hover:saturate-100 hover:cursor-pointer"
+    />
   )
 }
