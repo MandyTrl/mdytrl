@@ -4,6 +4,7 @@ import { soria, generalSans } from '@/utils/fonts'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
 import Cursor from '@/components/Cursor'
+import { ScrollTo } from '@/components/ScrollTo'
 
 export const metadata: Metadata = {
   title: 'Mandy Thorel - Portfolio',
@@ -21,6 +22,7 @@ export default function RootLayout({
         <link rel="icon" href="/assets/logomdytrl.svg" sizes="88px" />
       </head>
       <body className={`${soria.variable} ${generalSans.variable}`}>
+        {/* <ScrollTo scrollTarget={100} /> */}
         <Cursor />
         <Navbar />
         <div className="mx-96 pt-16 border-b border-solid border-b-gray-secondary">{children}</div>

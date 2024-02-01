@@ -19,9 +19,11 @@ export const Footer = () => {
         </div>
       </div>
 
+      <p className="text-xs pr-2 self-end">©Mandy Thorel</p>
+
       <div>
         <p className="text-gray-primary uppercase text-xs font-semibold font-soria">last update</p>
-        <p className="border-r border-r-yel-primary pr-2">jan. 2024</p>
+        <p className="border-r border-r-yel-primary pr-2">march 2024</p>
       </div>
     </footer>
   )
