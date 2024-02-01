@@ -67,14 +67,23 @@ export const ProjectLayout = () => {
       </ul>
 
       <div>
-        <p
-          className={clsx(
-            project.type === 'OpenClassRooms' ? 'bg-[#7451EB] text-white' : 'bg-yel-secondary text-primary',
-            'w-fit rounded-lg px-2 py-[1px] mb-4 uppercase text-xs tracking-wide'
-          )}
-        >
-          {project.type}
-        </p>
+        <div className="flex items-center justify-between mb-4 uppercase text-xs tracking-wide">
+          <div
+            className={clsx(
+              project.type === 'OpenClassRooms' ? 'bg-[#7451EB] text-white' : 'bg-yel-secondary text-primary',
+              'w-fit rounded-lg px-2 py-[1px] mr-2'
+            )}
+          >
+            {project.type}
+          </div>
+
+          <p className="flex justify-center hover:cursor-pointer">
+            <span className="text-gray-primary underline underline-offset-4 hover:decoration-yel-primary mr-2">
+              Consulter le site
+            </span>
+            <span className="font-semibold">⤴</span>
+          </p>
+        </div>
 
         <div className="flex items-center mb-4">
           <p className="font-semibold uppercase text-xs mr-2 tracking-wide">Description</p>
