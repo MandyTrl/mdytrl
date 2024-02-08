@@ -25,7 +25,7 @@ export default function RootLayout({
         {/* <ScrollTo scrollTarget={100} /> */}
         <Cursor />
         <Navbar />
-        <div className="mx-96 pt-14 border-b border-solid border-b-gray-secondary">{children}</div>
+        <div className="pt-14 border-b border-solid border-b-gray-secondary">{children}</div>
         <Footer />
       </body>
     </html>
