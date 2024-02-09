@@ -24,7 +24,7 @@ export const ProjectLayout = () => {
     <div className="mx-96">
       <Slider images={project.images} />
 
-      <div className="bg-white p-10 rounded-t-2xl">
+      <div className="bg-white p-10 rounded-t-2xl mt-10 pb-20">
         <div className="flex mt-4">
           <h1 className="font-bold text-6xl uppercase text-primary">{project.name}</h1>
           {project.repo && (

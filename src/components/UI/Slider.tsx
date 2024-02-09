@@ -38,7 +38,7 @@ export const Slider = ({ images }: SliderProps) => {
   }, [currentIndex])
 
   return (
-    <div className="w-full h-[450px] overflow-hidden rounded-b-2xl mb-10 drop-shadow-md">
+    <div className="w-full h-[450px] overflow-hidden rounded-b-2xl drop-shadow-md">
       <div className="h-[450px] relative">
         {moreThanOneImg && (
           <div className="text-xl font-soria">
