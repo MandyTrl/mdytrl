@@ -21,10 +21,10 @@ export const ProjectLayout = () => {
   const lastStack = project.stacks.slice(-1).toString()
 
   return (
-    <div className="mx-96">
+    <div>
       <Slider images={project.images} />
 
-      <div className="bg-white p-10 rounded-t-2xl mt-10 pb-20">
+      <div className="bg-white p-10 rounded-t-2xl mt-10 pb-20 border-t border-gray-secondary">
         <div className="flex mt-4">
           <h1 className="font-bold text-6xl uppercase text-primary">{project.name}</h1>
           {project.repo && (

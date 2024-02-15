@@ -22,10 +22,10 @@ export default function RootLayout({
         <link rel="icon" href="/assets/logomdytrl.svg" sizes="88px" />
       </head>
       <body className={`${soria.variable} ${generalSans.variable}`}>
-        {/* <ScrollTo scrollTarget={100} /> */}
+        {/* <ScrollTo scrollTarget={140} /> */}
         <Cursor />
         <Navbar />
-        <div className="pt-14">{children}</div>
+        <div className="pt-14 mx-96">{children}</div>
         <Footer />
       </body>
     </html>

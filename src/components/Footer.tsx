@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className="flex justify-between p-8 font-generalSans bg-slate-50">
+    <footer className="flex justify-between p-8 font-generalSans bg-white">
       <div className="flex items-center ml-4">
         <p className="text-gray-primary uppercase text-xs font-semibold font-soria pr-4">coded with</p>
         <div className="Sheldon text-xs">

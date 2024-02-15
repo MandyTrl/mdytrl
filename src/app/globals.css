@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --dark-color: #040421;
+  --primary: #040421;
   --yellow-color: #ffdb27;
+  --yel-secondary: #fff8d6;
+  --gray-primary: #575467;
+  --gray-secondary: #e0e0f5;
   background-color: var(--yellow-color);
 }
 
@@ -20,19 +23,20 @@
 }
 
 body {
-  background-color: #ffff;
-  color: var(--dark-color);
+  background-color: #f7fafc;
+  color: var(--primary);
   /* cursor: none; */
-  scrollbar-color: var(--yellow-color) var(--dark-color);
+  scrollbar-color: var(--yellow-color) var(--primary);
 }
 
 /* style scrollbar */
 body::-webkit-scrollbar {
-  width: 4px;
+  width: 6px;
+  overflow: scroll;
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--dark-color);
+  background: var(--primary);
   border-radius: 20px;
 }
 
@@ -45,6 +49,7 @@ body::-webkit-scrollbar-thumb {
 @keyframes scroll {
   0% {
     transform: translateY(0);
+    background: #f7fafc;
   }
   100% {
     transform: translateY(-100%);
@@ -56,5 +61,5 @@ body::-webkit-scrollbar-thumb {
 }
 
 .fade-stacks-cards {
-  background: radial-gradient(circle, transparent 70%, #ffffff 100%);
+  background: radial-gradient(circle, transparent 70%, #f7fafc 100%);
 }
