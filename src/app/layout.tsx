@@ -3,7 +3,7 @@ import './globals.css'
 import { soria, generalSans } from '@/utils/fonts'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
-import Cursor from '@/components/Cursor'
+import Cursor from '@/components/UI/Cursor'
 import { ScrollTo } from '@/components/ScrollTo'
 
 export const metadata: Metadata = {

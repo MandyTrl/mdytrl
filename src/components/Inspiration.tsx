@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from 'uuid'
-import { stuffs } from '@/utils/datas/things-i-love.ts'
 import { ItemCard } from './ItemCard'
+import { stuffs } from '@/utils/datas/things-i-love.ts'
+import { artInspiration } from '@/utils/datas/inspiration'
 
 export const Inspiration = () => {
   return (
@@ -19,10 +20,9 @@ export const Inspiration = () => {
       </ul>
 
       <aside className="flex justify-center relative">
-        <ItemCard index={1} />
-        <ItemCard index={2} />
-        <ItemCard index={3} />
-        <ItemCard index={4} />
+        {artInspiration.map((el, idx) => {
+          return <ItemCard index={idx} datas={el} />
+        })}
       </aside>
     </div>
   )

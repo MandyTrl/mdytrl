@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { artInspirationType } from '@/utils/datas/inspiration'
 
 type InspirationCardPropsType = {
   index: number
+  datas: artInspirationType
 }
 
-export const ItemCard = ({ index }: InspirationCardPropsType) => {
+export const ItemCard = ({ index, datas }: InspirationCardPropsType) => {
   const translateX = `-${index}0%`
 
   return (
@@ -27,7 +29,7 @@ export const ItemCard = ({ index }: InspirationCardPropsType) => {
       style={{ zIndex: index + 1, translate: `${translateX}` }}
     >
       <Image
-        src="/assets/inspirations/art/asleep_in_the_woods_1877_jules_breton.jpg"
+        src={datas.img}
         alt="github_link"
         width={160}
         height={240}
@@ -35,8 +37,10 @@ export const ItemCard = ({ index }: InspirationCardPropsType) => {
       />
 
       <div className="bg-white h-12 w-full z-10 absolute bottom-0 rounded-b-lg p-2 italic">
-        <p className="text-[13px]">Asleep in the woods</p>
-        <p className="text-[11px]">Jules Breton - 1877</p>
+        <p className="text-[13px]">{datas.oeuvre}</p>
+        <p className="text-[11px]">
+          {datas.artiste} - {datas.année}
+        </p>
       </div>
     </div>
   )
