@@ -8,7 +8,7 @@ type InspirationCardPropsType = {
 }
 
 export const ItemCard = ({ index, datas }: InspirationCardPropsType) => {
-  const translateX = `-${index}0%`
+  const translateX = `-${index}5%`
 
   return (
     // <div>
@@ -25,7 +25,7 @@ export const ItemCard = ({ index, datas }: InspirationCardPropsType) => {
     // </div>
 
     <div
-      className={`absolute transform rounded-lg h-60 w-40 translate-y-12 skew-y-12 drop-shadow-sm hover:cursor-pointer border border-gray-secondary hover:-translate-y-[100px] 2 duration-500 ease-in-out`}
+      className={`absolute transform rounded-lg h-60 w-40 skew-y-12 drop-shadow-sm hover:cursor-pointer hover:-translate-y-[120px] duration-500 ease-in-out`}
       style={{ zIndex: index + 1, translate: `${translateX}` }}
     >
       <Image
@@ -37,9 +37,9 @@ export const ItemCard = ({ index, datas }: InspirationCardPropsType) => {
       />
 
       <div className="bg-white h-12 w-full z-10 absolute bottom-0 rounded-b-lg p-2 italic">
-        <p className="text-[13px]">{datas.oeuvre}</p>
+        <p className="text-[13px] line-clamp-1">{datas.oeuvre}</p>
         <p className="text-[11px]">
-          {datas.artiste} - {datas.année}
+          {datas.artiste} {datas.année}
         </p>
       </div>
     </div>
