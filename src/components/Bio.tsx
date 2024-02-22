@@ -1,5 +1,3 @@
-import { Stuffs } from './Stuffs'
-
 export const Bio = () => {
   return (
     <div className="flex flex-col w-2/4 mr-10 mt-[13px] text-right">
@@ -25,7 +23,6 @@ export const Bio = () => {
           actuellement.
         </p>
       </div>
-      <Stuffs />
     </div>
   )
 }

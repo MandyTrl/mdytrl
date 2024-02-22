@@ -22,7 +22,7 @@ export default function RootLayout({
         <link rel="icon" href="/assets/logomdytrl.svg" sizes="88px" />
       </head>
       <body className={`${rokkitt.variable} ${generalSans.variable}`}>
-        <PreLoader />
+        {/* <PreLoader /> */}
         <Cursor />
         <Navbar />
         <div className="pt-14 mx-96">{children}</div>

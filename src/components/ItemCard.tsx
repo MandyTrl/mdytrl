@@ -1,19 +1,15 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import {
-  artInspirationType,
-  bookInspirationType,
-  musicInspirationType,
-  stuffInspirationType
-} from '@/utils/datas/inspiration'
+import { inspirationType } from '@/utils/datas/inspiration'
 
 type InspirationCardPropsType = {
   index: number
-  datas: artInspirationType
+  datas: inspirationType
+  numberOfItems: number
 }
 
-export const ItemCard = ({ index, datas }: InspirationCardPropsType) => {
-  const translateX = `${index}0%`
+export const ItemCard = ({ index, datas, numberOfItems }: InspirationCardPropsType) => {
+  const translateX = `-${index}50px`
 
   return (
     // <div>
@@ -30,14 +26,20 @@ export const ItemCard = ({ index, datas }: InspirationCardPropsType) => {
     // </div>
     <div
       className={`relative transform rounded-lg h-60 w-40 skew-y-12 drop-shadow-sm hover:cursor-pointer hover:-translate-y-[120px] duration-500 ease-in-out`}
-      style={{ zIndex: index + 1, translate: `${translateX}` }}
+      style={{ zIndex: numberOfItems - index, translate: translateX }}
     >
-      <Image src={datas.img} alt="github_link" width={160} height={224} className="object-cover h-56 rounded-lg" />
+      <Image
+        src={datas.img}
+        alt="github_link"
+        width={160}
+        height={224}
+        className="object-cover h-56 max-w-full rounded-lg"
+      />
 
       <div className="bg-white h-12 w-full z-10 absolute bottom-0 rounded-b-lg p-2 italic">
-        <p className="text-[13px] line-clamp-1">{datas.artwork}</p>
+        <p className="text-[13px] line-clamp-1">{datas.title}</p>
         <p className="text-[11px]">
-          {datas.artist} {datas.year}
+          {datas.owner} {datas.year}
         </p>
       </div>
     </div>

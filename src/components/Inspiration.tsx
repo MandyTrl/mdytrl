@@ -10,11 +10,8 @@ export const Inspiration = () => {
       </div>
 
       <div className="flex mt-20">
-        {inspiration.art.map((el, idx) => {
-          return <ItemCard key={uuidv4()} index={idx} datas={el} />
-        })}
-        {inspiration.book.map((el, idx) => {
-          return <ItemCard key={uuidv4()} index={idx} datas={el} />
+        {inspiration.map((el, idx) => {
+          return <ItemCard key={uuidv4()} index={idx} datas={el} numberOfItems={inspiration.length} />
         })}
       </div>
     </aside>
