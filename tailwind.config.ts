@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        soria: ['var(--font-soria)'],
+        rokkitt: ['var(--font-rokkitt)'],
         generalSans: ['var(--font-general-sans)']
       },
       colors: {
@@ -18,6 +18,10 @@ const config: Config = {
         primary: '#040421',
         'gray-primary': '#575467',
         'gray-secondary': '#E0E0F5'
+      },
+      boxShadow: {
+        footer: '0 22px 15px -22px rgba(0,0,0,0.45) inset, 27px 0 10px -27px rgba(0,0,0,0.45) inset',
+        'footer-btn': '0 20px 15px -20px rgba(0,0,0,0.2) inset, 25px 0 10px -25px rgba(0,0,0,0.3) inset'
       }
     }
   },

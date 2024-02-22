@@ -45,6 +45,10 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /* animation for stacks cards container */
 @keyframes scroll {
   0% {
@@ -57,9 +61,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 .animate-scrolling {
-  animation: scroll 60s linear infinite;
+  animation: scroll 120s linear infinite;
 }
 
 .fade-stacks-cards {
   background: radial-gradient(circle, transparent 70%, #f7fafc 100%);
+}
+
+/* animation pour le radius des bordures sur les socials links */
+.trans-border-radius {
+  border-radius: 100%;
+  transition: border-radius 0.3s ease-in-out;
+}
+
+.trans-border-radius:hover {
+  border-radius: 25%;
 }

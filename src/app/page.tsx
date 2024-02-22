@@ -1,6 +1,7 @@
 import { LocalTime } from '@/components/LocalTime'
 import { TechnicalSkillsLayout } from './layouts/TechnicalSkillsLayout'
 import { AboutLayout } from './layouts/AboutLayout'
+import { Inspiration } from '@/components/Inspiration'
 
 export default function Home() {
   return (
@@ -17,8 +18,12 @@ export default function Home() {
         <TechnicalSkillsLayout />
       </section>
 
-      <section id="about" className="mb-20 h-screen">
+      <section id="about" className="mb-20 h-full">
         <AboutLayout />
+      </section>
+
+      <section id="inspiration" className="mb-20">
+        <Inspiration />
       </section>
     </main>
   )

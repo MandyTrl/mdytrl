@@ -12,7 +12,7 @@ export const LocalTime = () => {
       <p className="text-right pr-2 pt-1 hover:cursor-pointer hover:scale-x-110 hover:-translate-x-12 duration-300 font-sans">
         ¡ plɹoʍ ollǝɥ
       </p>
-      <p className="font-soria text-6xl">
+      <p className="font-rokkitt text-6xl">
         {date} {month}. {year} {time}
       </p>
     </aside>

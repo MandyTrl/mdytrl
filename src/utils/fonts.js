@@ -1,14 +1,49 @@
 import localFont from 'next/font/local'
 
-export const soria = localFont({
+export const rokkitt = localFont({
   src: [
     {
-      path: '../../public/fonts/Soria/soria-font.ttf',
+      path: '../../public/fonts/rokkitt/rokkitt-Thin.ttf',
+      weight: '100',
+      style: 'normal'
+    },
+    {
+      path: '../../public/fonts/rokkitt/rokkitt-Extralight.ttf',
+      weight: '200',
+      style: 'normal'
+    },
+    {
+      path: '../../public/fonts/rokkitt/rokkitt-Light.ttf',
+      weight: '300',
+      style: 'normal'
+    },
+    {
+      path: '../../public/fonts/rokkitt/rokkitt-Regular.ttf',
       weight: '400',
+      style: 'normal'
+    },
+    {
+      path: '../../public/fonts/rokkitt/rokkitt-Medium.ttf',
+      weight: '500',
+      style: 'normal'
+    },
+    {
+      path: '../../public/fonts/rokkitt/rokkitt-Semibold.ttf',
+      weight: '600',
+      style: 'normal'
+    },
+    {
+      path: '../../public/fonts/rokkitt/rokkitt-Bold.ttf',
+      weight: '700',
+      style: 'normal'
+    },
+    {
+      path: '../../public/fonts/rokkitt/rokkitt-ExtraBold.ttf',
+      weight: '800',
       style: 'normal'
     }
   ],
-  variable: '--font-soria'
+  variable: '--font-rokkitt'
 })
 
 export const generalSans = localFont({

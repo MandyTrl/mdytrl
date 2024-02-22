@@ -4,15 +4,18 @@ import { projects } from '@/utils/datas/projects'
 
 export const ProjectsList = () => {
   return (
-    <div className="w-3/5 h-full ml-8 hover:cursor-pointer">
+    <div className="w-full h-full ml-10">
       {projects.map((project, index) => {
         return (
-          <div key={index} className="group last:border-b border-t border-primary py-6">
+          <div
+            key={index}
+            className="element-hover group py-6 hover:cursor-pointer last:border-b border-t border-primary"
+          >
             <Link href={`/projects/${project.name}`}>
               <div className="flex justify-between px-2">
-                <p className="uppercase transform group-hover:scale-[1.25] duration-300 group-hover:translate-x-[10%]">
-                  &lt; {project.name} <span className="group-hover:text-yel-primary">/</span>
-                  &gt;
+                <p className="uppercase transform duration-300 group-hover:scale-[1.25] group-hover:translate-x-[10%]">
+                  <span className="group-hover:opacity-100 opacity-0 duration-300 text-yel-primary">•</span>{' '}
+                  {project.name}
                 </p>
                 <p className="flex items-center">
                   <span className="text-sm mr-4 opacity-0 group-hover:opacity-100 transform duration-300 group-hover:translate-x-[0%] translate-x-[50%]">

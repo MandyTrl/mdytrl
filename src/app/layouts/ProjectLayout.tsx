@@ -47,12 +47,12 @@ export const ProjectLayout = () => {
         <ul className="w-full flex items-center border-y border-solid border-gray-primary py-4 my-4">
           {project.stacks.map((stack: string) => {
             return stack !== lastStack ? (
-              <li key={uuidv4()} className="flex items-center uppercase tracking-wider font-soria text-xl">
+              <li key={uuidv4()} className="flex items-center uppercase tracking-wider font-rokkitt text-xl">
                 <span className="text-sm px-[10px] text-gray-primary">❈</span>
                 {stack}
               </li>
             ) : (
-              <li key={uuidv4()} className="flex items-center uppercase tracking-wider font-soria text-xl">
+              <li key={uuidv4()} className="flex items-center uppercase tracking-wider font-rokkitt text-xl">
                 <span className="text-xs px-[10px] text-gray-primary">❈</span>
                 {stack}
                 <span className="text-xs px-[10px] text-gray-primary">❈</span>

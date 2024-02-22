@@ -1,19 +1,19 @@
 import { v4 as uuidv4 } from 'uuid'
 import { ItemCard } from './ItemCard'
-import { artInspiration } from '@/utils/datas/inspiration'
-import { Separator } from './UI/Separator'
+import { inspiration } from '@/utils/datas/inspiration'
 
 export const Inspiration = () => {
   return (
-    <aside className="flex flex-col items-start">
+    <aside className="flex flex-col items-start h-fit">
       <div className="flex flex-col justify-center items-center">
-        <Separator />
-        <h2 className="uppercase font-soria text-4xl text-primary font-semibold my-6 tracking-widest">Inspirations</h2>
-        <Separator />
+        <h2 className="uppercase font-rokkitt text-4xl text-primary font-semibold my-6">Inspirations</h2>
       </div>
 
-      <div className="mt-20 mx-28">
-        {artInspiration.map((el, idx) => {
+      <div className="flex mt-20">
+        {inspiration.art.map((el, idx) => {
+          return <ItemCard key={uuidv4()} index={idx} datas={el} />
+        })}
+        {inspiration.book.map((el, idx) => {
           return <ItemCard key={uuidv4()} index={idx} datas={el} />
         })}
       </div>

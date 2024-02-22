@@ -2,11 +2,12 @@ import { Stuffs } from './Stuffs'
 
 export const Bio = () => {
   return (
-    <div className="flex flex-col w-2/4 ml-6 mt-[13px]">
-      <h2 className="text-6xl font-bold mb-6 text-primary">Hey !</h2>
+    <div className="flex flex-col w-2/4 mr-10 mt-[13px] text-right">
+      <h2 className="text-6xl font-bold mb-6 text-primary">À propos</h2>
 
       <div>
-        Après une belle expérience dans le service client où l’adage est :{' '}
+        <p className="mb-6">Hey, moi c&apos;est Mandy ! </p>
+        Et après une belle expérience dans le service client où l’adage est :{' '}
         <span className="text-lg tracking-wide mt-6">
           “{' '}
           <span className="italic underline underline-offset-4 decoration-yel-primary">

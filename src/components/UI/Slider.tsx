@@ -41,7 +41,7 @@ export const Slider = ({ images }: SliderProps) => {
     <div className="w-full h-[450px] overflow-hidden rounded-b-2xl border-b border-gray-secondary">
       <div className="h-[450px] relative">
         {moreThanOneImg && (
-          <div className="text-xl font-soria">
+          <div className="text-xl font-rokkitt">
             <button
               onClick={goToPrevious}
               className="z-20 absolute top-[180px] left-0 px-[11px] rounded-full hover:cursor-pointer ml-5 border border-gray-secondary hover:border-gray-400 active:border-gray-primary"
