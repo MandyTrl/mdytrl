@@ -1,7 +1,7 @@
 import { LocalTime } from '@/components/LocalTime'
 import { TechnicalSkillsLayout } from './layouts/TechnicalSkillsLayout'
 import { AboutLayout } from './layouts/AboutLayout'
-import { Inspiration } from '@/components/Inspiration'
+import { Inspiration } from '@/components/Inspiration/Inspiration'
 
 export default function Home() {
   return (

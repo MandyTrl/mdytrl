@@ -17,10 +17,11 @@ export default function ProfilPicture() {
       <RoundedText />
       <span className={`${labelStyle} top-[100px]`}>Design</span>
       <span className={`${labelStyle} top-[140px]`}>Coder</span>
-      <span className={`${labelStyle} top-[180px]`}>Art</span>
+      <span className={`${labelStyle} top-[180px]`}>L'Art</span>
+      <span className={`${labelStyle} top-[300px]`}>La Nature</span>
+      <span className={`${labelStyle} top-[340px]`}>Un phoque sur une plage</span>
       <span className={`${labelStyle} top-[220px]`}>Voyager</span>
       <span className={`${labelStyle} top-[260px]`}>Tester de nouveaux restaurants</span>
-      <span className={`${labelStyle} top-[300px]`}>Nature</span>
     </div>
   )
 }

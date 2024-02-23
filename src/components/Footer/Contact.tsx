@@ -3,8 +3,8 @@ import { SocialLinks } from './SocialLinks'
 
 export const Contact = () => {
   return (
-    <div className="flex flex-col items-center mb-24">
-      <p className="font-rokkitt uppercase text-[60px]">Me Cont@cter</p>
+    <div className="flex flex-col items-center mt-28">
+      <p className="font-rokkitt uppercase text-[80px]">Me Cont@cter</p>
 
       <div className="flex items-center justify-center w-full">
         <SocialLinks />
