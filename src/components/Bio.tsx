@@ -1,6 +1,6 @@
 export const Bio = () => {
   return (
-    <div className="flex flex-col w-2/6 h-fit mr-10 mt-[30px] border border-t-transparent border-r-transparent border-b-transparent pl-4 border-[0.5] border-gray-primary">
+    <div className="flex flex-col w-2/6 h-fit mr-10 mt-[30px]">
       <h2 className="text-6xl mb-6 text-primary">À propos</h2>
 
       <div className="text-justify">
