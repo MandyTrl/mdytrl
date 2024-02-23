@@ -1,7 +1,8 @@
+import Image from 'next/image'
 import { v4 as uuidv4 } from 'uuid'
-import { ItemCard, StuffCard } from './StuffCard'
+import { StuffCard } from './StuffCard'
 import { inspiration, inspirationEnum } from '@/utils/datas/inspiration'
-import { MusicCard } from './musicCard'
+import { MusicCard } from './MusicCard'
 import { BookCard } from './BookCard'
 import { ArtCard } from './ArtCard'
 
@@ -13,8 +14,21 @@ export const Inspiration = () => {
 
   return (
     <aside className="flex flex-col items-start h-fit">
-      <div className="flex flex-col justify-center items-center">
-        <h2 className="uppercase font-rokkitt text-4xl text-primary font-semibold my-6">Inspirations</h2>
+      <h2 className="relative w-full uppercase border-y border-l-transparent border-r-transparent border-solid border-primary py-2 font-rokkitt tracking-[20px] text-4xl text-center">
+        Inspirations
+      </h2>
+
+      <div className="flex">
+        <div className="[&>*]:my-2 mt-2 mr-10 flex flex-col items-end">
+          {stuffInspiration.map((el, idx) => {
+            return <StuffCard key={uuidv4()} index={idx} datas={el} numberOfItems={inspiration.length} />
+          })}
+        </div>
+        <div className="flex flex-wrap w-3/4">
+          {artInspiration.map((el, idx) => {
+            return <ArtCard key={uuidv4()} index={idx} datas={el} numberOfItems={inspiration.length} />
+          })}
+        </div>
       </div>
       <div className="[&>*]:my-6 flex flex-col">
         <div className="flex items-end">
@@ -25,16 +39,6 @@ export const Inspiration = () => {
         <div className="flex items-end">
           {bookInspiration.map((el, idx) => {
             return <BookCard key={uuidv4()} index={idx} datas={el} numberOfItems={inspiration.length} />
-          })}
-        </div>
-        <div className="flex flex-wrap">
-          {artInspiration.map((el, idx) => {
-            return <ArtCard key={uuidv4()} index={idx} datas={el} numberOfItems={inspiration.length} />
-          })}
-        </div>
-        <div className="[&>*]:mx-2 flex items-end">
-          {stuffInspiration.map((el, idx) => {
-            return <StuffCard key={uuidv4()} index={idx} datas={el} numberOfItems={inspiration.length} />
           })}
         </div>
       </div>

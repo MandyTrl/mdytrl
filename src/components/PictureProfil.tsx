@@ -6,7 +6,7 @@ export default function ProfilPicture() {
     'absolute -right-4 px-2 py-[4px] pt-1 rounded-md bg-gray-primary bg-opacity-20 drop-shadow-md text-white uppercase tracking-wider text-xs duration-300 group-hover:text-sm group-hover:bg-opacity-30'
 
   return (
-    <div className="group relative m-4 ml-0">
+    <div className="my-10 group relative m-4 ml-0">
       <Image
         alt="Mandy Thorel, photo en noir et blanc"
         src="/assets/mdytrl.webp"

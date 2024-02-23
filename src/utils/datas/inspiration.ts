@@ -11,7 +11,7 @@ export type inspirationType = {
   link?: string
   description?: string
   year?: string
-  img: string
+  img?: string
 }
 
 export const inspiration: inspirationType[] = [
@@ -56,36 +56,31 @@ export const inspiration: inspirationType[] = [
     title: 'The Chain',
     owner: 'Fleetwood Mac',
     type: inspirationEnum.MUSIC,
-    link: 'https://open.spotify.com/embed/track/5e9TFTbltYBg2xThimr0rU',
-    img: '/assets/inspirations/music/the_chain_fleetwood_mac.jpeg'
+    link: 'https://open.spotify.com/embed/track/5e9TFTbltYBg2xThimr0rU'
   },
   {
     title: 'Hanoï Café',
     owner: 'Bleu Toucan',
     type: inspirationEnum.MUSIC,
-    link: 'https://open.spotify.com/embed/track/2I4AhSWdVku2SQsJXiIci6',
-    img: '/assets/inspirations/music/hanoi_cafe_bleu_toucan.jpeg'
+    link: 'https://open.spotify.com/embed/track/2I4AhSWdVku2SQsJXiIci6'
   },
   {
     title: "Tourment d'amour",
     description: 'La Fine Équipe',
     type: inspirationEnum.MUSIC,
-    link: 'https://open.spotify.com/embed/track/1pur8kv69XmZqA3uoMEYnH',
-    img: '/assets/inspirations/music/tourment_d_amour_la_fine_equipe.jpeg'
+    link: 'https://open.spotify.com/embed/track/1pur8kv69XmZqA3uoMEYnH'
   },
   {
     title: 'Esperar Pra Ver',
     description: 'Poolside',
     type: inspirationEnum.MUSIC,
-    link: 'https://open.spotify.com/embed/track/7baNYnxas4NlQXcoj6kSmp',
-    img: '/assets/inspirations/music/esperar_pra_ver_poolside.jpeg'
+    link: 'https://open.spotify.com/embed/track/7baNYnxas4NlQXcoj6kSmp'
   },
   {
     title: 'Le ballet',
     description: 'Céline Dion',
     type: inspirationEnum.MUSIC,
-    link: 'https://open.spotify.com/embed/track/4Eb8bYd5yS0YqtBahtayIC',
-    img: '/assets/inspirations/music/le_ballet_celine_dion.jpeg'
+    link: 'https://open.spotify.com/embed/track/4Eb8bYd5yS0YqtBahtayIC'
   },
 
   {
@@ -125,11 +120,31 @@ export const inspiration: inspirationType[] = [
   },
 
   {
+    title: 'Dancing couple',
+    owner: 'Elliot Erwitt',
+    type: inspirationEnum.ART,
+    year: '- 1952',
+    img: '/assets/inspirations/art/elliott_erwitt_valencia_dancing_couple_1952.jpeg'
+  },
+  {
     title: 'After bathing',
     owner: 'Joaquin Sorolla',
     type: inspirationEnum.ART,
     year: '- 1915',
     img: '/assets/inspirations/art/after_bathing_joaquin_sorolla_bastida_1915.png'
+  },
+  {
+    title: 'Arcade',
+    owner: 'Pahieme',
+    type: inspirationEnum.ART,
+    img: '/assets/inspirations/art/arcade_pahieme.webp'
+  },
+  {
+    title: 'Waves',
+    owner: 'Elliot Erwitt',
+    type: inspirationEnum.ART,
+    year: '- 1966',
+    img: '/assets/inspirations/art/elliot_erwitt_waves_brighton_1966.jpeg'
   },
   {
     title: 'As sleep in the woods',
@@ -144,25 +159,5 @@ export const inspiration: inspirationType[] = [
     type: inspirationEnum.ART,
     year: '- 1908',
     img: '/assets/inspirations/art/pierre_auguste_renoir_paysage_de_Cagnes_1908.jpeg'
-  },
-  {
-    title: 'Arcade',
-    owner: 'Pahieme',
-    type: inspirationEnum.ART,
-    img: '/assets/inspirations/art/arcade_pahieme.webp'
-  },
-  {
-    title: 'Dancing couple',
-    owner: 'Elliot Erwitt',
-    type: inspirationEnum.ART,
-    year: '- 1952',
-    img: '/assets/inspirations/art/elliott_erwitt_valencia_dancing_couple_1952.jpeg'
-  },
-  {
-    title: 'Waves',
-    owner: 'Elliot Erwitt',
-    type: inspirationEnum.ART,
-    year: '- 1966',
-    img: '/assets/inspirations/art/elliot_erwitt_waves_brighton_1966.jpeg'
   }
 ]

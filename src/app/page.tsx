@@ -14,7 +14,7 @@ export default function Home() {
       </section>
 
       <section id="projects" className="flex flex-col h-screen">
-        <div className="text-6xl font-bold mb-12">Projets</div>
+        <div className="text-6xl mb-12">Projets</div>
         <TechnicalSkillsLayout />
       </section>
 

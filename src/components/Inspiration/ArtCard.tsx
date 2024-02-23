@@ -3,16 +3,16 @@ import { InspirationCardPropsType } from './StuffCard'
 
 export const ArtCard = ({ datas }: InspirationCardPropsType) => {
   return (
-    <div className="shrink-1 relative group flex mx-4 my-2 h-[400px] w-[240px]drop-shadow-sm hover:cursor-pointerspotify">
+    <div className="relative group flex m-4 h-[360px] w-[206px]drop-shadow-sm hover:cursor-pointer">
       <Image
         src={datas.img}
         alt={`cover ${datas.title} ${datas.owner}`}
-        width={200}
-        height={400}
-        className="object-cover opacity-90 rounded-lg group-hover:transition-all group-hover:duration-700 group-hover:ease-in-out group-hover:rounded-none group-hover:w-[450px] group-hover:opacity-100"
+        width={206}
+        height={360}
+        className="object-cover opacity-85 rounded-lg group-hover:transition-all group-hover:duration-700 group-hover:ease-in-out group-hover:rounded-none group-hover:opacity-100"
       />
 
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center w-fit justify-center italic text-white group-hover:transition-opacity group-hover:duration-500 group-hover:ease-in-out group-hover:opacity-0">
+      <div className="h-full w-full bg-primary rounded-lg bg-opacity-30 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center flex flex-col justify-center italic text-white group-hover:transition-all group-hover:duration-500 group-hover:ease-in-out group-hover:opacity-0 group-hover:rounded-none">
         <p className="text-[18px]">{datas.title}</p>
         <p className="text-[13px]">
           {datas.owner} {datas.year}

@@ -3,9 +3,9 @@ import { Bio } from './Bio'
 
 export const AboutSection = () => {
   return (
-    <div className="flex items-between">
-      <Bio />
+    <div className="flex flex-col items-center">
       <ProfilPicture />
+      <Bio />
     </div>
   )
 }

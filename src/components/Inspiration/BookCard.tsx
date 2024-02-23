@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { InspirationCardPropsType } from './StuffCard'
 
 export const BookCard = ({ index, datas, numberOfItems }: InspirationCardPropsType) => {
-  const n = 7
+  const n = 6
   const translateX = `-${index * n}0%`
 
   return (
