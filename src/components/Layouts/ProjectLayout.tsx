@@ -85,22 +85,22 @@ export const ProjectLayout = () => {
             )}
           </div>
 
-          <div className="py-8">
-            <p className="text-gray-primary pt-4 pb-10">{project.description}</p>
+          <div className="mt-6 mb-20">
+            <p className="text-gray-primary py-8 border-t-[0.5px] border-b-[0.5px] border-gray-secondary">
+              {project.description}
+            </p>
 
             <div>
-              <p className="uppercase mr-2 text-sm tracking-wide pt-4 pb-2 border-t-[0.5px] border-gray-secondary">
-                COMPÉTENCES DÉVELOPPÉES
-              </p>
-              <div>
+              <p className="uppercase mr-2 text-sm tracking-wide mt-8 pb-2">COMPÉTENCES DÉVELOPPÉES</p>
+              <ul>
                 {project.skills_developed?.map((skill: string) => {
                   return (
-                    <p key={uuidv4()} className="pb-1 pl-4 text-gray-primary">
-                      {skill}
-                    </p>
+                    <li key={uuidv4()} className="list-outside pb-1 pl-4 text-gray-primary">
+                      ∙ {skill}
+                    </li>
                   )
                 })}
-              </div>
+              </ul>
             </div>
           </div>
         </div>

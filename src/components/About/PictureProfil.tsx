@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { RoundedText } from './UI/RoundedText'
+import { RoundedText } from '../UI/RoundedText'
 
 export default function ProfilPicture() {
   const labelStyle =

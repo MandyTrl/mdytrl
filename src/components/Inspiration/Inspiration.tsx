@@ -2,12 +2,10 @@ import Image from 'next/image'
 import { v4 as uuidv4 } from 'uuid'
 import { StuffCard } from './StuffCard'
 import { inspiration, inspirationEnum } from '@/utils/datas/inspiration'
-import { MusicCard } from './MusicCard'
 import { BookCard } from './BookCard'
 import { ArtCard } from './ArtCard'
 
 export const Inspiration = () => {
-  const musicInspiration = inspiration.filter((el) => el.type === inspirationEnum.MUSIC)
   const bookInspiration = inspiration.filter((el) => el.type === inspirationEnum.BOOK)
   const stuffInspiration = inspiration.filter((el) => el.type === inspirationEnum.STUFF)
   const artInspiration = inspiration.filter((el) => el.type === inspirationEnum.ART)
@@ -31,11 +29,6 @@ export const Inspiration = () => {
         </div>
       </div>
       <div className="[&>*]:my-6 flex flex-col">
-        <div className="flex items-end">
-          {musicInspiration.map((el, idx) => {
-            return <MusicCard key={uuidv4()} index={idx} datas={el} numberOfItems={inspiration.length} />
-          })}
-        </div>
         <div className="flex items-end">
           {bookInspiration.map((el, idx) => {
             return <BookCard key={uuidv4()} index={idx} datas={el} numberOfItems={inspiration.length} />

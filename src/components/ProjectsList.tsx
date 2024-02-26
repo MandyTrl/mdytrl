@@ -13,7 +13,7 @@ export const ProjectsList = () => {
           >
             <Link href={`/projects/${project.name}`}>
               <div className="flex justify-between px-2">
-                <p className="uppercase transform duration-300 group-hover:scale-[1.25] group-hover:translate-x-[10%]">
+                <p className="uppercase transform duration-300 group-hover:scale-[1.30] group-hover:translate-x-[10%]">
                   <span className="group-hover:opacity-100 opacity-0 duration-300 text-yel-primary">•</span>{' '}
                   {project.name}
                 </p>
