@@ -85,14 +85,13 @@ export const ProjectLayout = () => {
             )}
           </div>
 
-          <div className="flex-col py-8">
-            <div className="mb-6">
-              <p className="uppercase mr-2 tracking-wide pb-2">Description</p>
-              <p className="text-gray-primary pl-4">{project.description}</p>
-            </div>
+          <div className="py-8">
+            <p className="text-gray-primary pt-4 pb-10">{project.description}</p>
 
             <div>
-              <p className="uppercase mr-2 tracking-wide pb-2">COMPÉTENCES DÉVELOPPÉES</p>
+              <p className="uppercase mr-2 text-sm tracking-wide pt-4 pb-2 border-t-[0.5px] border-gray-secondary">
+                COMPÉTENCES DÉVELOPPÉES
+              </p>
               <div>
                 {project.skills_developed?.map((skill: string) => {
                   return (
