@@ -4,12 +4,12 @@ import { projects } from '@/utils/datas/projects'
 
 export const ProjectsList = () => {
   return (
-    <div className="w-full h-full ml-10">
+    <div className="w-5/6 h-full">
       {projects.map((project, index) => {
         return (
           <div
             key={index}
-            className="element-hover group py-6 hover:cursor-pointer last:border-b border-t border-primary"
+            className="element-hover group py-10 hover:cursor-pointer last:border-b border-t border-primary"
           >
             <Link href={`/projects/${project.name}`}>
               <div className="flex justify-between px-2">

@@ -23,9 +23,9 @@ export const Navbar = () => {
         </li>
         <li>
           <Link
-            href={pathname === '/' ? '#about' : '/#about'}
+            href="/about"
             className="hover:underline hover:underline-offset-4"
-            onClick={() => gsap.to(window, { duration: 2, scrollTo: { y: '#about', offsetY: 160 } })}
+            // onClick={() => gsap.to(window, { duration: 2, scrollTo: { y: '#about', offsetY: 160 } })}
           >
             À propos
           </Link>

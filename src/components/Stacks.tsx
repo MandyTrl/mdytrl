@@ -6,7 +6,7 @@ export const Stacks = () => {
   const stacksWithUniqueIds = stacks.map((stack) => ({ ...stack, id: uuidv4() }))
 
   return (
-    <div className="w-fit h-full overflow-hidden no-scrollbar relative">
+    <div className="w-fit h-full overflow-hidden no-scrollbar relative border border-red">
       <div>
         <div className="animate-scrolling">
           {stacksWithUniqueIds.map((stack: stackType) => {

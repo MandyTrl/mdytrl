@@ -1,4 +1,4 @@
-import { ProjectLayout } from '@/app/layouts/ProjectLayout'
+import { ProjectLayout } from '@/components/Layouts/ProjectLayout'
 
 export default function ResumeProject() {
   return (

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { rokkitt, generalSans } from '@/utils/fonts'
-import { Navbar } from '@/components/Navbar'
+import { Navbar } from '@/components/Navigation/Navbar'
 import { Footer } from '@/components/Footer/Footer'
 import Cursor from '@/components/UI/Cursor'
 import { PreLoader } from '@/components/PreLoader'

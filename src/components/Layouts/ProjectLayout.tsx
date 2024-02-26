@@ -5,7 +5,6 @@ import { usePathname } from 'next/navigation'
 import { clsx } from 'clsx'
 import { v4 as uuidv4 } from 'uuid'
 import { projects } from '@/utils/datas/projects'
-import { Separator } from '@/components/UI/Separator'
 import { Slider } from '@/components/UI/Slider'
 
 export const ProjectLayout = () => {
@@ -44,10 +43,10 @@ export const ProjectLayout = () => {
           )}
         </div>
 
-        <ul className="w-full flex items-center border-y border-solid border-gray-primary py-4 my-4">
+        <ul className="w-full flex items-center border-y border-solid border-gray-primary py-6 my-6">
           {project.stacks.map((stack: string) => {
             return stack !== lastStack ? (
-              <li key={uuidv4()} className="flex items-center uppercase tracking-wider font-rokkitt text-xl">
+              <li key={uuidv4()} className="flex items-center uppercase tracking-wider font-rokkitt text-2xl">
                 <span className="text-sm px-[10px] text-gray-primary">❈</span>
                 {stack}
               </li>
@@ -86,21 +85,23 @@ export const ProjectLayout = () => {
             )}
           </div>
 
-          <div className="flex items-center mb-4">
-            <p className="font-semibold uppercase text-xs mr-2 tracking-wide">Description</p>
-            <p className="text-gray-primary">{project.description}</p>
-          </div>
+          <div className="flex-col py-8">
+            <div className="mb-6">
+              <p className="uppercase mr-2 tracking-wide pb-2">Description</p>
+              <p className="text-gray-primary pl-4">{project.description}</p>
+            </div>
 
-          <div>
-            <p className="font-semibold uppercase text-xs mr-2 tracking-wide mb-2">COMPÉTENCES DÉVELOPPÉES</p>
             <div>
-              {project.skills_developed?.map((skill: string) => {
-                return (
-                  <p key={uuidv4()} className="pb-1 pl-4 text-gray-primary">
-                    {skill}
-                  </p>
-                )
-              })}
+              <p className="uppercase mr-2 tracking-wide pb-2">COMPÉTENCES DÉVELOPPÉES</p>
+              <div>
+                {project.skills_developed?.map((skill: string) => {
+                  return (
+                    <p key={uuidv4()} className="pb-1 pl-4 text-gray-primary">
+                      {skill}
+                    </p>
+                  )
+                })}
+              </div>
             </div>
           </div>
         </div>

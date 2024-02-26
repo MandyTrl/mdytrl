@@ -3,7 +3,7 @@ import { Stacks } from '@/components/Stacks'
 
 export const TechnicalSkillsLayout = () => {
   return (
-    <aside className="flex w-full max-h-[450px]">
+    <aside className="w-full h-[600px] flex justify-around items-center">
       <Stacks />
       <ProjectsList />
     </aside>
