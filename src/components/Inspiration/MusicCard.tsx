@@ -1,6 +1,12 @@
-import { InspirationCardPropsType } from './StuffCard'
+import { musicType } from '@/utils/datas/music'
 
-export const MusicCard = ({ datas, index, numberOfItems }: InspirationCardPropsType) => {
+export type MusicCardPropsType = {
+  index: number
+  datas: musicType
+  numberOfItems: number
+}
+
+export const MusicCard = ({ datas, index, numberOfItems }: MusicCardPropsType) => {
   const n = 8
   const translateX = `-${index * n}0%`
   return (

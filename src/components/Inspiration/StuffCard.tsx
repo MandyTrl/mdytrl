@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { inspirationEnum, inspirationType } from '@/utils/datas/inspiration'
+import { inspirationType } from '@/utils/datas/inspiration'
 
 export type InspirationCardPropsType = {
   index: number

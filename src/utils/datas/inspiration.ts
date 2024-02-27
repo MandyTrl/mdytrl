@@ -1,8 +1,7 @@
 export enum inspirationEnum {
   ART = 'art',
   BOOK = 'book',
-  STUFF = 'stuff',
-  MUSIC = 'music'
+  STUFF = 'stuff'
 }
 export type inspirationType = {
   type: inspirationEnum
@@ -50,37 +49,6 @@ export const inspiration: inspirationType[] = [
     type: inspirationEnum.STUFF,
     link: 'www.test.fr',
     img: '/assets/stacks/spotify.svg'
-  },
-
-  {
-    title: 'The Chain',
-    owner: 'Fleetwood Mac',
-    type: inspirationEnum.MUSIC,
-    link: 'https://open.spotify.com/embed/track/5e9TFTbltYBg2xThimr0rU'
-  },
-  {
-    title: 'Hanoï Café',
-    owner: 'Bleu Toucan',
-    type: inspirationEnum.MUSIC,
-    link: 'https://open.spotify.com/embed/track/2I4AhSWdVku2SQsJXiIci6'
-  },
-  {
-    title: "Tourment d'amour",
-    description: 'La Fine Équipe',
-    type: inspirationEnum.MUSIC,
-    link: 'https://open.spotify.com/embed/track/1pur8kv69XmZqA3uoMEYnH'
-  },
-  {
-    title: 'Esperar Pra Ver',
-    description: 'Poolside',
-    type: inspirationEnum.MUSIC,
-    link: 'https://open.spotify.com/embed/track/7baNYnxas4NlQXcoj6kSmp'
-  },
-  {
-    title: 'Le ballet',
-    description: 'Céline Dion',
-    type: inspirationEnum.MUSIC,
-    link: 'https://open.spotify.com/embed/track/4Eb8bYd5yS0YqtBahtayIC'
   },
 
   {
