@@ -11,8 +11,8 @@ export type CollapseItemTypeProps = {
 export const CollapseItem = ({ datas }: CollapseItemTypeProps) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
-  const handleClick = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index)
+  const handleClick = (idx: number) => {
+    setOpenIndex(openIndex === idx ? null : idx)
   }
 
   return datas.map((el: ExperienceType, idx: number) => {
@@ -64,10 +64,13 @@ export const CollapseItem = ({ datas }: CollapseItemTypeProps) => {
             id="details"
             className={clsx(openIndex === idx ? 'max-h-60' : 'max-h-0 overflow-hidden', 'duration-300 pl-[44px]')}
           >
-            <p className="py-2">{el.description}</p>
+            <p id="description" className="py-2">
+              {el.description}
+            </p>
+
             {el.tasks &&
               el.tasks.map((task: string, idx: number) => (
-                <p key={idx} className="py-1 pl-4 text-sm">
+                <p id="task" key={idx} className="py-1 pl-4 text-sm">
                   ∙ {task}
                 </p>
               ))}

@@ -17,8 +17,8 @@ export const MusicCard = ({ datas, index, numberOfItems }: MusicCardPropsType) =
     >
       <iframe
         src={datas.link}
-        width={0}
-        height={0}
+        width={250}
+        height={250}
         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture;"
         loading="lazy"
         style={{ borderRadius: 0, width: '250px', height: '250px' }}

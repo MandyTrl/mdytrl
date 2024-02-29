@@ -12,6 +12,7 @@ export default function ProfilPicture() {
         src="/assets/mdytrl.webp"
         width={578}
         height={834}
+        priority
         className="drop-shadow rounded-md transition duration-700	saturate-0 hover:saturate-100 hover:cursor-pointer"
       />
       <RoundedText />

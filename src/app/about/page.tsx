@@ -11,7 +11,7 @@ export default function About() {
       </section>
 
       <div className="relative flex pt-[480px]">
-        <section id="musics" className="absolute m-auto left-1/2 -right-[28%] top-20 -translate-x-1/2 flex">
+        <section id="musics" className="absolute m-auto left-1/2 -right-[30%] top-20 -translate-x-1/2 flex">
           {musics.map((el, idx) => {
             return <MusicCard key={idx} index={idx} datas={el} numberOfItems={musics.length} />
           })}
