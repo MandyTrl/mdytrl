@@ -29,5 +29,10 @@ export const musics: musicType[] = [
     title: 'Le ballet',
     artist: 'Céline Dion',
     link: 'https://open.spotify.com/embed/track/4Eb8bYd5yS0YqtBahtayIC'
+  },
+  {
+    title: 'Technologic',
+    artist: 'Daft Punk',
+    link: 'https://open.spotify.com/embed/track/1iNeZGJsoC0D7ZyJTdIbDS'
   }
 ]

@@ -16,7 +16,14 @@ export const CollapseItem = () => {
             height={20}
             className={clsx(isOpen && 'rotate-45', 'mr-4 duration-300 group-active:rotate-45')}
           />
-          <p className="duration-300 group-hover:bg-yel-primary px-2 py-1 rounded-md">Test ligne de CV poste année</p>
+          <p
+            className={clsx(
+              isOpen && 'bg-yel-primary',
+              'duration-300 group-hover:bg-yel-primary px-2 py-[1px] rounded-md'
+            )}
+          >
+            Test ligne de CV poste année
+          </p>
         </div>
 
         <p>2023</p>
