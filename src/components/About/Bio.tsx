@@ -3,7 +3,10 @@ import Image from 'next/image'
 export const Bio = () => {
   return (
     <div className="flex flex-col h-fit mb-20 w-3/5">
-      <h2 className="text-6xl mb-6 text-primary">À propos</h2>
+      <div className="flex items-center">
+        <h2 className="text-6xl mb-6 text-primary mr-4">À propos</h2>
+        <Image src="/assets/icons/arrow-up-right.svg" alt="" width={30} height={30} />
+      </div>
 
       <div id="bio_txt">
         <div>

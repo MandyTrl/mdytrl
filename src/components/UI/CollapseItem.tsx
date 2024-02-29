@@ -2,10 +2,10 @@
 import clsx from 'clsx'
 import Image from 'next/image'
 import { useState } from 'react'
-import { ProfessionalExperiencesType, SchoolExperiencesType } from '@/utils/datas/cv'
+import { ExperienceType } from '@/utils/datas/cv'
 
 export type CollapseItemTypeProps = {
-  datas: SchoolExperiencesType[] | ProfessionalExperiencesType[]
+  datas: ExperienceType[]
 }
 
 export const CollapseItem = ({ datas }: CollapseItemTypeProps) => {
@@ -15,8 +15,8 @@ export const CollapseItem = ({ datas }: CollapseItemTypeProps) => {
     setOpenIndex(openIndex === index ? null : index)
   }
 
-  return datas.map((el: SchoolExperiencesType | ProfessionalExperiencesType, idx: number) => {
-    const isProfessionalExperience = typeof el === ProfessionalExperiencesType
+  return datas.map((el: ExperienceType, idx: number) => {
+    const isProfessionalExperience = 'job' in el
 
     return (
       <div
@@ -46,28 +46,33 @@ export const CollapseItem = ({ datas }: CollapseItemTypeProps) => {
                 'transition duration-500 group-hover:bg-yel-primary px-2 py-[1px] rounded-md'
               )}
             >
-              {el.job || el.certification}
+              {isProfessionalExperience
+                ? el.job
+                : typeof el.certification === 'string'
+                ? el.certification
+                : el.certification.map((line, idx) => <p key={idx}>{line}</p>)}
             </p>
 
-            <p className="font-rokkitt tracking-widest text-sm">{el.company || el.school}</p>
+            <p className="font-rokkitt tracking-widest text-sm mr-2">
+              {isProfessionalExperience ? el.company : el.school}
+            </p>
           </div>
         </div>
 
-        <div
-          id="details"
-          className={clsx(
-            openIndex === idx && el.description ? 'max-h-60' : 'max-h-0 overflow-hidden',
-            'duration-300 pl-[44px]'
-          )}
-        >
-          <p className="py-2">{el.description}</p>
-          {el.tasks &&
-            el.tasks.map((task: string, idx: number) => (
-              <p key={idx} className="py-1 pl-4 text-sm">
-                ∙ {task}
-              </p>
-            ))}
-        </div>
+        {isProfessionalExperience && (
+          <div
+            id="details"
+            className={clsx(openIndex === idx ? 'max-h-60' : 'max-h-0 overflow-hidden', 'duration-300 pl-[44px]')}
+          >
+            <p className="py-2">{el.description}</p>
+            {el.tasks &&
+              el.tasks.map((task: string, idx: number) => (
+                <p key={idx} className="py-1 pl-4 text-sm">
+                  ∙ {task}
+                </p>
+              ))}
+          </div>
+        )}
       </div>
     )
   })

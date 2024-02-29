@@ -17,14 +17,14 @@ export const school: SchoolExperiencesType[] = [
   },
   {
     year: '2015',
-    certification: 'Titre Secrétaire/Assistante Médicale',
+    certification: 'Titre RNCP de niveau IV : Secrétaire - Assistante Médicale',
     school: 'Avlis'
   },
   {
-    year: '2010 | 2011',
+    year: '2009 à 2011',
     certification: [
-      'Licence Géographie, société et aménagement du territoire | 2011',
-      "Licence Histoire de l'art et archéologie | 2010"
+      'Licence Géographie, société et aménagement du territoire',
+      "Licence Histoire de l'art et archéologie"
     ],
     school: 'Université Paris X, Nanterre'
   }
@@ -38,6 +38,8 @@ export type ProfessionalExperiencesType = {
   tasks: string[]
   stacks?: string[]
 }
+
+export type ExperienceType = SchoolExperiencesType | ProfessionalExperiencesType
 
 export const professional: ProfessionalExperiencesType[] = [
   {

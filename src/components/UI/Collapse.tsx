@@ -1,9 +1,9 @@
-import { SchoolExperiencesType, ProfessionalExperiencesType, school, professional } from '@/utils/datas/cv'
+import { ExperienceType } from '@/utils/datas/cv'
 import { CollapseItem } from './CollapseItem'
 
 export type CollapseTypeProps = {
   title: string
-  datas: SchoolExperiencesType[] | ProfessionalExperiencesType[]
+  datas: ExperienceType[]
 }
 
 export const Collapse = ({ title, datas }: CollapseTypeProps) => {
