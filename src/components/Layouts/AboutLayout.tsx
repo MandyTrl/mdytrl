@@ -4,13 +4,10 @@ import { CV } from '../About/CV'
 
 export const AboutLayout = () => {
   return (
-    <div className="h-screen text-gray-primary flex">
-      <div>
-        <Bio />
-        <CV />
-      </div>
-
+    <div className="h-full flex flex-col items-center text-gray-primary">
       <ProfilPicture />
+      <Bio />
+      <CV />
     </div>
   )
 }

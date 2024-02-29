@@ -5,19 +5,22 @@ import { musics } from '@/utils/datas/music'
 
 export default function About() {
   return (
-    <main className="flex flex-col h-full items-center justify-between font-generalSans">
-      <section id="about" className="mb-20 h-full">
+    <main className="flex flex-col items-center justify-between font-generalSans">
+      <section id="about" className="relative mb-20 h-full">
         <AboutLayout />
-        <div className="flex items-end">
+      </section>
+
+      <div className="relative flex pt-[480px]">
+        <section id="musics" className="absolute m-auto left-1/2 -right-[28%] top-20 -translate-x-1/2 flex">
           {musics.map((el, idx) => {
             return <MusicCard key={idx} index={idx} datas={el} numberOfItems={musics.length} />
           })}
-        </div>
-      </section>
+        </section>
 
-      <section id="inspiration" className="mb-20">
-        <Inspiration />
-      </section>
+        <section id="inspiration" className="mb-20">
+          <Inspiration />
+        </section>
+      </div>
     </main>
   )
 }

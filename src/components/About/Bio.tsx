@@ -1,22 +1,27 @@
+import Image from 'next/image'
+
 export const Bio = () => {
   return (
-    <div className="flex flex-col w-2/6 h-fit mr-10 mt-[30px]">
+    <div className="flex flex-col h-fit mb-20 w-3/5">
       <h2 className="text-6xl mb-6 text-primary">À propos</h2>
 
-      <div className="text-justify">
-        Après une belle expérience dans le service client où l’adage est :{' '}
-        <span className="italic underline underline-offset-4 decoration-yel-primary">
-          &quot; À chaque problème, sa solution &quot;,
-        </span>
-        <p> j’ai voulu renouer avec ma créativité en la mêlant à ma vie professionnelle.</p>
-        <p className="mt-6">
-          J&apos;aime donner vie aux idées, les mettre sur papier ou sur PC. Le code est pour moi comme de
+      <div id="bio_txt">
+        <div>
+          Après une belle expérience dans le service client où l’adage est :{' '}
+          <p className="italic text-lg text-center my-1">&quot;À chaque problème, sa solution&quot;,</p>
+          j’ai voulu renouer avec ma créativité en la mêlant à ma vie professionnelle.
+        </div>
+        <p className="mt-8">
+          J&apos;aime donne text-rightr vie aux idées, les mettre sur papier ou sur PC. Le code est pour moi comme de
           l&apos;artisanat numérique où s&apos;allie logique et créativité.
         </p>
-        <p className="mt-6">
-          C’est donc naturellement qu’en 2022 je me suis reconvertie dans le développement où je m&apos;épanouis
-          actuellement.
-        </p>
+        <div className="flex items-center justify-center mt-8">
+          <Image alt="" src="/assets/icons/smile.svg" width={25} height={25} />
+          <p className="ml-5">
+            C’est donc naturellement qu’en 2022 je me suis reconvertie dans le développement où je m&apos;épanouis
+            actuellement.
+          </p>
+        </div>
       </div>
     </div>
   )
