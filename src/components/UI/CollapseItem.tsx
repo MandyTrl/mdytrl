@@ -23,7 +23,7 @@ export const CollapseItem = ({ datas }: CollapseItemTypeProps) => {
         key={idx}
         className={clsx(
           openIndex === idx && 'bg-slate-100',
-          'group flex flex-col justify-between px-2 py-3 hover:cursor-pointer'
+          'group flex flex-col justify-between px-2 py-3 duration-300 hover:cursor-pointer hover:bg-slate-100'
         )}
       >
         <div className="flex items-center justify-between" onClick={() => handleClick(idx)}>
@@ -39,19 +39,32 @@ export const CollapseItem = ({ datas }: CollapseItemTypeProps) => {
           </div>
 
           <div className="text-right">
-            <p
+            <div
               id="title"
               className={clsx(
                 openIndex === idx && 'text-gray-primary font-semibold group-hover:bg-transparent',
-                'transition duration-500 group-hover:bg-yel-primary px-2 py-[1px] rounded-md'
+                'transition duration-500 px-2 py-[1px] rounded-md'
               )}
             >
-              {isProfessionalExperience
-                ? el.job
-                : typeof el.certification === 'string'
-                ? el.certification
-                : el.certification.map((line, idx) => <p key={idx}>{line}</p>)}
-            </p>
+              {isProfessionalExperience ? (
+                <p>
+                  <span className="opacity-0 group-hover:opacity-100 duration-300">✨ </span>
+                  {el.job}
+                </p>
+              ) : typeof el.certification === 'string' ? (
+                <p>
+                  <span className="opacity-0 group-hover:opacity-100 duration-300">✨ </span>
+                  {el.certification}
+                </p>
+              ) : (
+                el.certification.map((line, idx) => (
+                  <p key={idx}>
+                    <span className="opacity-0 group-hover:opacity-100 duration-300">✨ </span>
+                    {line}
+                  </p>
+                ))
+              )}
+            </div>
 
             <p className="font-rokkitt tracking-widest text-sm mr-2">
               {isProfessionalExperience ? el.company : el.school}

@@ -18,7 +18,7 @@ export const Bio = () => {
         </div>
 
         <div className="flex items-center mt-2">
-          <Image alt="" src="/assets/icons/smile.svg" width={32} height={32} />
+          <Image alt="" src="/assets/icons/smile.svg" width={25} height={25} />
           <p className="ml-2">
             C’est donc naturellement qu’en 2022 je me suis reconvertie dans le développement où je m&apos;épanouis
             actuellement.
