@@ -25,7 +25,6 @@
 body {
   background-color: #f7fafc;
   color: var(--primary);
-  /* cursor: none; */
   scrollbar-color: var(--yellow-color) var(--primary);
 }
 

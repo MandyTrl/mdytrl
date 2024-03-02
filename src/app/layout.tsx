@@ -3,7 +3,6 @@ import './globals.css'
 import { rokkitt, generalSans } from '@/utils/fonts'
 import { Navbar } from '@/components/Navigation/Navbar'
 import { Footer } from '@/components/Footer/Footer'
-import Cursor from '@/components/UI/Cursor'
 import { PreLoader } from '@/components/PreLoader'
 
 export const metadata: Metadata = {
@@ -23,7 +22,6 @@ export default function RootLayout({
       </head>
       <body className={`${rokkitt.variable} ${generalSans.variable}`}>
         {/* <PreLoader /> */}
-        <Cursor />
         <Navbar />
         <div className="pt-14 mx-96">{children}</div>
         <Footer />
