@@ -76,3 +76,20 @@ body::-webkit-scrollbar-thumb {
 .trans-border-radius:hover {
   border-radius: 25%;
 }
+
+#magnetic_btn {
+  background: linear-gradient(
+    var(--gray-primary),
+    var(--gray-primary) 50%,
+    var(--yellow-color) 50%,
+    var(--yellow-color)
+  );
+  background-size: 100% 200%;
+  transition: background 0.3s;
+  color: #ffff;
+}
+
+#magnetic_btn:hover {
+  background-position: 100% 100%;
+  color: var(--primary);
+}

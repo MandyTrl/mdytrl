@@ -5,7 +5,7 @@ import React, { useRef } from 'react'
 type BtnTypeProps = {
   title: string
 }
-export const Button = ({ title }: BtnTypeProps) => {
+export const MagneticBtn = ({ title }: BtnTypeProps) => {
   const btnRef = useRef<HTMLDivElement | null>(null)
   const titleRef = useRef<HTMLDivElement | null>(null)
 
@@ -38,7 +38,7 @@ export const Button = ({ title }: BtnTypeProps) => {
         id="magnetic_btn"
         onMouseMove={(e) => onMouseMove(e)}
         onMouseOut={() => onMouseOut()}
-        className="rounded-full bg-yel-primary text-primary w-36 h-36 p-5 text-lg hover:scale-105 ease-out duration-300"
+        className="rounded-full w-36 h-36 p-5 text-lg hover:scale-105 ease-out duration-300"
       >
         <div ref={titleRef} className="duration-100 ease-linear">
           <Link href="/about">{title}</Link>

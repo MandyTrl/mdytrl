@@ -18,14 +18,14 @@ export const ProjectsList = () => {
                   {project.name}
                 </p>
                 <p className="flex items-center">
-                  <span className="text-sm mr-4 opacity-0 group-hover:opacity-100 transform duration-300 group-hover:translate-x-[0%] translate-x-[50%]">
+                  <span className="mr-4 opacity-0 group-hover:opacity-100 transform duration-300 group-hover:translate-x-[0%] translate-x-[50%]">
                     Voir le projet
                   </span>
                   <Image
                     src="/assets/icons/arrow-up-right.svg"
                     alt={`go to the project ${project.name}`}
-                    width={15}
-                    height={15}
+                    width={18}
+                    height={18}
                   />
                 </p>
               </div>

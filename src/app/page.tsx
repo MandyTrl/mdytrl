@@ -1,6 +1,6 @@
 import { TechnicalSkillsLayout } from '@/components/Layouts/TechnicalSkillsLayout'
 import { LocalTime } from '@/components/LocalTime'
-import { Button } from '@/components/UI/Button'
+import { MagneticBtn } from '@/components/UI/MagneticBtn'
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
           Développeuse <br></br> Fullstack
         </div>
         <LocalTime />
-        <Button title="À propos" />
+        <MagneticBtn title="À propos" />
       </section>
 
       <section id="projects" className="flex flex-col h-screen">
