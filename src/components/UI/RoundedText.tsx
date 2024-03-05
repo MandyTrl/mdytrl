@@ -3,10 +3,10 @@ import ReactCurvedText from 'react-curved-text'
 
 export const RoundedText = () => {
   return (
-    <div className="absolute -top-20 -right-28">
+    <div className="lg:absolute lg:-top-20 lg:-right-28 my-4 lg:my-0">
       <ReactCurvedText
-        width={200}
-        height={200}
+        width={165}
+        height={165}
         cx={80}
         cy={80}
         rx={73}

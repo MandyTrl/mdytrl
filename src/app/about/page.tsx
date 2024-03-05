@@ -10,8 +10,11 @@ export default function About() {
         <AboutLayout />
       </section>
 
-      <div className="relative flex pt-[480px]">
-        <section id="musics" className="absolute m-auto left-1/2 -right-[30%] top-20 -translate-x-1/2 flex">
+      <div className="lg:relative lg:pt-[480px]">
+        <section
+          id="musics"
+          className="lg:absolute m-auto lg:left-1/2 lg:-right-[30%] lg:top-20 lg:-translate-x-1/2 flex flex-col items-center"
+        >
           {musics.map((el, idx) => {
             return <MusicCard key={idx} index={idx} datas={el} numberOfItems={musics.length} />
           })}

@@ -4,7 +4,7 @@ import { projects } from '@/utils/datas/projects'
 
 export const ProjectsList = () => {
   return (
-    <div className="w-5/6 h-full">
+    <div className="lg:w-5/6 h-full">
       {projects.map((project, index) => {
         return (
           <div

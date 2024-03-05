@@ -1,4 +1,3 @@
-import { inspiration, inspirationEnum } from '@/utils/datas/inspiration'
 import { GridInsipiration } from './GridInspiration'
 
 export const Inspiration = () => {

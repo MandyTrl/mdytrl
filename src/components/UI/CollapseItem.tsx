@@ -27,8 +27,11 @@ export const CollapseItem = ({ datas }: CollapseItemTypeProps) => {
           'group flex flex-col justify-between px-2 py-3 duration-300 hover:bg-slate-100'
         )}
       >
-        <div className="flex items-center justify-between" onClick={() => isProfessionalExperience && handleClick(idx)}>
-          <div id="year" className="flex items-center w-1/4">
+        <div
+          className="flex flex-col lg:flex-row items-center lg:justify-between"
+          onClick={() => isProfessionalExperience && handleClick(idx)}
+        >
+          <div id="year" className="flex lg:items-center lg:w-1/4">
             <Image
               src="/assets/icons/list.svg"
               alt="dérouler cette ligne du CV"
@@ -37,18 +40,18 @@ export const CollapseItem = ({ datas }: CollapseItemTypeProps) => {
               className={clsx(
                 openIndex === idx && isProfessionalExperience && 'rotate-45',
                 isProfessionalExperience && 'group-active:rotate-45',
-                'mr-3 duration-500'
+                'mr-1 lg:mr-3 w-3 lg:w-[18px] duration-500'
               )}
             />
-            <p className="font-rokkitt">{el.year}</p>
+            <p className="font-rokkitt text-sm lg:text-base">{el.year}</p>
           </div>
 
-          <div className="text-right">
+          <div className="text-center lg:text-right">
             <div
               id="title"
               className={clsx(
                 openIndex === idx && 'text-gray-primary font-semibold group-hover:bg-transparent',
-                'transition duration-500 px-2 py-[1px] rounded-md'
+                'transition duration-500 lg:px-2 py-[1px] rounded-md'
               )}
             >
               {isProfessionalExperience ? (
@@ -87,15 +90,18 @@ export const CollapseItem = ({ datas }: CollapseItemTypeProps) => {
         {isProfessionalExperience && (
           <div
             id="details"
-            className={clsx(openIndex === idx ? 'max-h-60' : 'max-h-0 overflow-hidden', 'duration-300 pl-[44px]')}
+            className={clsx(
+              openIndex === idx ? 'max-h-90' : 'max-h-0 overflow-hidden',
+              'duration-300 px-1 lg:pl-[44px]'
+            )}
           >
-            <p id="description" className="py-2">
+            <p id="description" className="py-2 text-justify lg:text-left">
               {el.description}
             </p>
 
             {el.tasks &&
               el.tasks.map((task: string, idx: number) => (
-                <p id="task" key={idx} className="py-1 pl-4 text-sm">
+                <p id="task" key={idx} className="py-1 pl-2 lg:pl-4 text-sm">
                   ∙ {task}
                 </p>
               ))}

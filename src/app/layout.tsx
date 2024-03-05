@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={`${rokkitt.variable} ${generalSans.variable}`}>
         {/* <PreLoader /> */}
         <Navbar />
-        <div className="w-full pt-14 px-96">{children}</div>
+        <div className="w-full pt-14 px-4 lg:px-96">{children}</div>
         <Footer />
       </body>
     </html>
