@@ -3,7 +3,7 @@ import { RoundedText } from '../UI/RoundedText'
 
 export default function ProfilPicture() {
   const labelStyle =
-    'hover:cursor-pointer absolute -right-10 px-2 py-[4px] pt-1 rounded-md bg-gray-primary bg-opacity-30 drop-shadow-md text-white uppercase tracking-wider text-xs border border-transparent duration-300 hover:text-sm hover:bg-opacity-70 group-hover:duration-300 hover:text-yel-primary'
+    'hover:cursor-pointer absolute -right-10 px-2 py-[4px] pt-1 rounded-md bg-gray-primary bg-opacity-60 drop-shadow-md text-white uppercase tracking-wider text-xs border border-transparent duration-300 hover:text-sm hover:bg-opacity-80 group-hover:duration-300 hover:text-yel-primary'
 
   return (
     <div className="mt-28 mb-16 group relative m-4 ml-0">

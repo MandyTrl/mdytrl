@@ -23,17 +23,22 @@ export const CollapseItem = ({ datas }: CollapseItemTypeProps) => {
         key={idx}
         className={clsx(
           openIndex === idx && 'bg-slate-100',
-          'group flex flex-col justify-between px-2 py-3 duration-300 hover:cursor-pointer hover:bg-slate-100'
+          isProfessionalExperience && 'hover:cursor-pointer',
+          'group flex flex-col justify-between px-2 py-3 duration-300 hover:bg-slate-100'
         )}
       >
-        <div className="flex items-center justify-between" onClick={() => handleClick(idx)}>
+        <div className="flex items-center justify-between" onClick={() => isProfessionalExperience && handleClick(idx)}>
           <div id="year" className="flex items-center w-1/4">
             <Image
               src="/assets/icons/list.svg"
               alt="dérouler cette ligne du CV"
               width={18}
               height={18}
-              className={clsx(openIndex === idx && 'rotate-45', 'mr-3 duration-500 group-active:rotate-45')}
+              className={clsx(
+                openIndex === idx && isProfessionalExperience && 'rotate-45',
+                isProfessionalExperience && 'group-active:rotate-45',
+                'mr-3 duration-500'
+              )}
             />
             <p className="font-rokkitt">{el.year}</p>
           </div>
@@ -48,7 +53,14 @@ export const CollapseItem = ({ datas }: CollapseItemTypeProps) => {
             >
               {isProfessionalExperience ? (
                 <p>
-                  <span className="opacity-0 group-hover:opacity-100 duration-300">✨ </span>
+                  <span
+                    className={clsx(
+                      openIndex === idx && 'opacity-100',
+                      'opacity-0 group-hover:opacity-100 duration-300'
+                    )}
+                  >
+                    ✨{' '}
+                  </span>
                   {el.job}
                 </p>
               ) : typeof el.certification === 'string' ? (

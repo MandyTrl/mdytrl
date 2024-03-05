@@ -12,8 +12,8 @@ export const ProjectsList = () => {
             className="element-hover group py-10 hover:cursor-pointer last:border-b border-t border-primary"
           >
             <Link href={`/projects/${project.name}`}>
-              <div className="flex justify-between px-2">
-                <p className="uppercase transform duration-300 group-hover:scale-[1.30] group-hover:translate-x-[10%]">
+              <div className="flex justify-between px-1">
+                <p className="uppercase transform duration-300 group-hover:scale-[1.30] text-lg group-hover:translate-x-[12%]">
                   <span className="group-hover:opacity-100 opacity-0 duration-300 text-yel-primary">•</span>{' '}
                   {project.name}
                 </p>
