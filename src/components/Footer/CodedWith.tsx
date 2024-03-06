@@ -3,11 +3,13 @@ import { Copyright } from './Copyright'
 
 export const CodedWith = () => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="w-full flex flex-col items-center">
       <div className="w-full flex flex-col items-center justify-around">
-        <p className="uppercase font-rokkitt text-2xl font-thin tracking-[0.5em] lg:tracking-[0.7em]">coded with</p>
+        <p className="uppercase font-rokkitt text-2xl font-thin tracking-[0.5em] lg:tracking-[0.7em] lg:mb-2">
+          coded with
+        </p>
 
-        <div className="flex items-center border-t-[0.5px] border-b-[0.5px] border-gray-secondary py-20 lg:px-10">
+        <div className="lg:w-2/3 flex items-center lg:justify-center border-t-[0.5px] border-b-[0.5px] border-gray-secondary py-20 lg:px-10">
           <div className="Sheldon flex flex-col items-center">
             <p className="text-xl">≽^●˕●^≼</p>
             <p className="text-[10px] italic my-2">Sheldon</p>
