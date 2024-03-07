@@ -91,8 +91,8 @@ export const CollapseItem = ({ datas }: CollapseItemTypeProps) => {
           <div
             id="details"
             className={clsx(
-              openIndex === idx ? 'max-h-90' : 'max-h-0 overflow-hidden',
-              'duration-300 px-1 lg:pl-[44px]'
+              openIndex === idx ? 'max-h-[20rem]' : 'max-h-0',
+              'duration-300 ease-in-out px-1 lg:pl-[44px] overflow-hidden'
             )}
           >
             <p id="description" className="py-2 text-justify lg:text-left">

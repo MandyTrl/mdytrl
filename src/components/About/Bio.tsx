@@ -8,21 +8,25 @@ export const Bio = () => {
         <Image src="/assets/icons/arrow-up-right.svg" alt="" width={30} height={30} />
       </div>
 
-      <div id="bio_txt">
+      <div id="bio_txt" className="text-2xl">
         <div>
-          Hello, moi c&apos;est Mandy, et après une belle expérience dans le service client où l’adage est :{' '}
-          <p className="italic text-lg text-center my-1">&quot;À chaque problème, sa solution&quot;,</p>
-          j’ai voulu renouer avec ma créativité en la mêlant à ma vie professionnelle. J&apos;aime donner vie aux idées,
-          les mettre sur papier ou sur PC. Le code est pour moi comme de l&apos;artisanat numérique où s&apos;allie
-          logique et créativité.
+          <p>
+            Hello, moi c&apos;est Mandy, et après une belle expérience dans le service client où l’adage est :
+            <span className="font-rokkitt text-3xl"> À chaque problème, sa solution</span>, j’ai voulu renouer avec ma
+            créativité en la mêlant à ma vie professionnelle.
+          </p>
+          <p>
+            J&apos;aime donner vie aux idées, les mettre sur papier ou sur PC. Le code est pour moi comme de
+            l&apos;artisanat numérique où s&apos;allie logique et créativité.
+          </p>
         </div>
 
-        <div className="flex items-center mt-2">
-          <Image alt="" src="/assets/icons/smile.svg" width={25} height={25} />
-          <p className="ml-2">
+        <div className="flex items-end mt-2">
+          <p>
             C’est donc naturellement qu’en 2022 je me suis reconvertie dans le développement où je m&apos;épanouis
             actuellement.
           </p>
+          <Image alt="" src="/assets/icons/smile.svg" width={25} height={25} />
         </div>
       </div>
     </div>

@@ -5,9 +5,10 @@ import { useState } from 'react'
 import clsx from 'clsx'
 
 export default function ProfilPicture() {
-  const [imageUrl, setImgUrl] = useState<string>('/assets/mdytrl.webp')
+  const [imageUrl, setImgUrl] = useState<string>('/assets/photos/mdytrl.webp')
+  const isProfilImg = imageUrl === '/assets/photos/mdytrl.webp'
   const labelStyle =
-    'hover:cursor-pointer lg:absolute lg:-right-10 m-1 lg:m-0 px-2 py-[4px] pt-1 rounded-md bg-gray-primary bg-opacity-60 drop-shadow-md text-white uppercase tracking-wider text-xs border border-transparent duration-300 hover:text-sm hover:bg-opacity-80 group-hover:duration-300 hover:text-yel-primary'
+    'hover:cursor-pointer lg:absolute lg:-right-10 m-1 lg:m-0 px-2 py-[4px] pt-1 rounded-md bg-gray-primary bg-opacity-70 drop-shadow-md text-white uppercase tracking-wider text-xs border border-transparent duration-300 hover:text-sm hover:bg-opacity-80 group-hover:duration-300 hover:text-yel-primary'
 
   return (
     <div className="flex flex-col lg:flex-row items-center mt-28 mb-16 group relative m-4 ml-0">
@@ -18,25 +19,85 @@ export default function ProfilPicture() {
         height={834}
         priority
         className={clsx(
-          'drop-shadow rounded-md transition duration-700	saturate-0 hover:saturate-100 hover:cursor-pointer'
+          isProfilImg && 'saturate-0',
+          'drop-shadow rounded-md transition duration-700 h-[834px] object-cover hover:saturate-100 hover:cursor-pointer'
         )}
       />
       <RoundedText />
       <div className="flex flex-wrap lg:block">
-        <span className={`${labelStyle} lg:top-[120px]`}>Design</span>
-        <span className={`${labelStyle} lg:top-[170px]`}>Coder</span>
-        <span className={`${labelStyle} lg:top-[220px]`}>L&apos;Art</span>
-        <span className={`${labelStyle} lg:top-[270px]`}>La Nature</span>
         <span
-          className={`${labelStyle} lg:top-[320px]`}
-          onMouseEnter={() => setImgUrl('/assets/seal.avif')}
-          onMouseLeave={() => setImgUrl('/assets/mdytrl.webp')}
+          className={`${labelStyle} lg:top-[120px]`}
+          onMouseEnter={() => setImgUrl('/assets/photos/design.jpg')}
+          onMouseLeave={() => setImgUrl('/assets/photos/mdytrl.webp')}
+        >
+          Design
+        </span>
+        <span
+          className={`${labelStyle} lg:top-[170px]`}
+          onMouseEnter={() => setImgUrl('/assets/photos/mt-code.jpg')}
+          onMouseLeave={() => setImgUrl('/assets/photos/mdytrl.webp')}
+        >
+          Coder
+        </span>
+        <span
+          className={`${labelStyle} lg:top-[220px]`}
+          onMouseEnter={() => setImgUrl('/assets/photos/statue.jpg')}
+          onMouseLeave={() => setImgUrl('/assets/photos/mdytrl.webp')}
+        >
+          L&apos;Art
+        </span>
+        <span
+          className={`${labelStyle} lg:top-[270px]`}
+          onMouseEnter={() => setImgUrl('/assets/photos/seal.avif')}
+          onMouseLeave={() => setImgUrl('/assets/photos/mdytrl.webp')}
         >
           Un phoque sur une plage
         </span>
-        <span className={`${labelStyle} lg:top-[370px]`}>Voyager</span>
-        <span className={`${labelStyle} lg:top-[420px]`}>Tester de nouveaux restaurants</span>
+        <span
+          className={`${labelStyle} lg:top-[320px]`}
+          onMouseEnter={() => setImgUrl('/assets/photos/spring.jpg')}
+          onMouseLeave={() => setImgUrl('/assets/photos/mdytrl.webp')}
+        >
+          La Nature
+        </span>
+        <span
+          className={`${labelStyle} lg:top-[370px]`}
+          onMouseEnter={() => setImgUrl('/assets/photos/mt-suisse.jpg')}
+          onMouseLeave={() => setImgUrl('/assets/photos/mdytrl.webp')}
+        >
+          Voyager
+        </span>
+        <span
+          className={`${labelStyle} lg:top-[420px]`}
+          onMouseEnter={() => setImgUrl('/assets/photos/resto.jpg')}
+          onMouseLeave={() => setImgUrl('/assets/photos/mdytrl.webp')}
+        >
+          Tester de nouveaux restaurants
+        </span>
+        <span
+          className={`${labelStyle} lg:top-[470px]`}
+          onMouseEnter={() => setImgUrl('/assets/photos/music.jpg')}
+          onMouseLeave={() => setImgUrl('/assets/photos/mdytrl.webp')}
+        >
+          La musique de qualité
+        </span>
+        <span
+          className={`${labelStyle} lg:top-[520px]`}
+          onMouseEnter={() => setImgUrl('/assets/photos/dessin.jpg')}
+          onMouseLeave={() => setImgUrl('/assets/photos/mdytrl.webp')}
+        >
+          Dessiner
+        </span>
+        <span
+          className={`${labelStyle} lg:top-[570px]`}
+          onMouseEnter={() => setImgUrl('/assets/photos/archi-hostel.jpeg')}
+          onMouseLeave={() => setImgUrl('/assets/photos/mdytrl.webp')}
+        >
+          Prendre des photos
+        </span>
       </div>
+
+      <div>Mon compte Mapstr ! </div>
     </div>
   )
 }
