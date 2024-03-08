@@ -11,7 +11,7 @@ export const Bio = () => {
       <div id="bio_txt" className="text-2xl">
         <div>
           <p>
-            Hello, moi c&apos;est Mandy, et après une belle expérience dans le service client où l’adage est :
+            Hello, <br></br>moi c&apos;est Mandy, et après une belle expérience dans le service client où l’adage est :
             <span className="font-rokkitt text-3xl"> À chaque problème, sa solution</span>, j’ai voulu renouer avec ma
             créativité en la mêlant à ma vie professionnelle.
           </p>

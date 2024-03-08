@@ -1,4 +1,3 @@
-import { Inspiration } from '@/components/Inspiration/Inspiration'
 import { MusicCard } from '@/components/Inspiration/MusicCard'
 import { AboutLayout } from '@/components/Layouts/AboutLayout'
 import { musics } from '@/utils/datas/music'
@@ -10,20 +9,20 @@ export default function About() {
         <AboutLayout />
       </section>
 
-      <div className="lg:relative lg:pt-[480px]">
+      <div className="w-full lg:relative lg:pt-[480px]">
         <section
           id="musics"
-          className="lg:absolute m-auto lg:left-1/2 lg:-right-[30%] lg:top-20 lg:-translate-x-1/2 flex flex-col lg:flex-row lg:items-center"
+          className="lg:absolute m-auto lg:left-[51%] lg:-right-[30%] lg:top-20 lg:-translate-x-1/2 flex flex-col lg:flex-row"
         >
           {musics.map((el, idx) => {
             return <MusicCard key={idx} index={idx} datas={el} numberOfItems={musics.length} />
           })}
         </section>
-
-        <section id="inspiration" className="mb-20">
-          <Inspiration />
-        </section>
       </div>
+
+      {/* <section id="inspiration" className="mb-20">
+          <Inspiration />
+        </section> */}
     </main>
   )
 }

@@ -3,19 +3,23 @@ import ReactCurvedText from 'react-curved-text'
 
 export const RoundedText = () => {
   return (
-    <div className="lg:absolute lg:-top-20 lg:-right-28 my-4 lg:my-0">
+    <div className="lg:absolute lg:top-16 lg:-left-20 my-4 lg:my-0">
       <ReactCurvedText
-        width={165}
-        height={165}
-        cx={80}
-        cy={80}
-        rx={73}
-        ry={73}
+        width={200}
+        height={200}
+        cx={100}
+        cy={100}
+        rx={85}
+        ry={85}
         startOffset={0}
         reversed={false}
-        text="Les choses qui m'enthousiasme ⁓"
+        text="Les  choses  qui  m'enthousiasment ⁓ "
         textProps={{
-          style: { fontSize: 18, textTransform: 'uppercase', letterSpacing: '4px', border: 'solid 0.5px black' }
+          style: {
+            fontSize: 20,
+            textTransform: 'uppercase',
+            letterSpacing: '4px'
+          }
         }}
       />
     </div>
