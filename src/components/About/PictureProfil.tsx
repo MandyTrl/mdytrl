@@ -13,7 +13,7 @@ export default function ProfilPicture() {
     'w-32 text-center hover:cursor-pointer px-2 py-4 rounded-md bg-gray-primary bg-opacity-70 drop-shadow-md text-white uppercase tracking-wider text-xs border border-transparent duration-300 hover:scale-110 hover:bg-opacity-80 group-hover:duration-300 hover:text-yel-primary'
 
   return (
-    <div className="flex flex-col lg:flex-row items-center mt-28 mb-16 group relative m-4 ml-0">
+    <div className="flex flex-col lg:flex-row items-center mb-16 group relative m-4 ml-0">
       <Image
         alt="Mandy Thorel, photo en noir et blanc"
         src={imageUrl}

@@ -1,8 +1,6 @@
-import Image from 'next/image'
-
 export const Bio = () => {
   return (
-    <div className="flex flex-col h-fit mb-20 w-full">
+    <div className="h-fit w-full">
       <div id="bio_txt" className="text-2xl">
         <div>
           <p>
