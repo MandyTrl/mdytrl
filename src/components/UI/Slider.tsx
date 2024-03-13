@@ -38,7 +38,7 @@ export const Slider = ({ images }: SliderProps) => {
   }, [currentIndex])
 
   return (
-    <div className="w-full h-[450px] overflow-hidden rounded-b-2xl border-b border-gray-secondary">
+    <div className="w-full h-[450px] overflow-hidden rounded-b-2xl border-b border-gray-secondary mt-4">
       <div className="h-[450px] relative">
         {moreThanOneImg && (
           <div className="text-xl font-rokkitt">
@@ -60,7 +60,7 @@ export const Slider = ({ images }: SliderProps) => {
         <div>
           <img
             src={`${images[currentIndex]}`}
-            alt={`screenshot_${images[currentIndex]}`}
+            alt={`screenshot-${images[currentIndex]}`}
             className="object-cover hover:scale-110 hover:cursor-pointer transform duration-500"
           />
         </div>

@@ -48,7 +48,12 @@ export const projects: ProjectType[] = [
       "Utilisation de l'ORM Mongoose pour traiter les données",
       'Gestion des erreurs'
     ],
-    images: ['/assets/mdytrl.webp'],
+    images: [
+      '/assets/projects/monvieuxgrimoire/mon_vieux_grimoire1.png',
+      '/assets/projects/monvieuxgrimoire/mon_vieux_grimoire4.png',
+      '/assets/projects/monvieuxgrimoire/mon_vieux_grimoire2.png',
+      '/assets/projects/monvieuxgrimoire/mon_vieux_grimoire5.png'
+    ],
     repo: 'https://github.com/MandyTrl/mdytrl'
   },
   {

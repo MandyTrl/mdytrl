@@ -1,7 +1,6 @@
 'use client'
-import Image from 'next/image'
-import { RoundedText } from '../UI/RoundedText'
 import { useState } from 'react'
+import Image from 'next/image'
 import clsx from 'clsx'
 
 export default function ProfilPicture() {
@@ -25,7 +24,6 @@ export default function ProfilPicture() {
           'drop-shadow rounded-md transition duration-700 h-[834px] object-cover hover:saturate-100 hover:cursor-pointer'
         )}
       />
-      <RoundedText />
       <div className="lg:[&>span]:my-2 flex flex-wrap lg:flex-col lg:absolute lg:-right-20 m-1 lg:m-0">
         <span
           className={`${labelStyle}`}

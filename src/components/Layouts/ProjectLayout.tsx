@@ -3,7 +3,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { clsx } from 'clsx'
-import { v4 as uuidv4 } from 'uuid'
 import { projects } from '@/utils/datas/projects'
 import { Slider } from '@/components/UI/Slider'
 
@@ -44,14 +43,14 @@ export const ProjectLayout = () => {
         </div>
 
         <ul className="w-full flex items-center border-y border-solid border-gray-primary py-6 my-6">
-          {project.stacks.map((stack: string) => {
+          {project.stacks.map((stack: string, idx: number) => {
             return stack !== lastStack ? (
-              <li key={uuidv4()} className="flex items-center uppercase tracking-wider font-rokkitt text-2xl">
+              <li key={idx} className="flex items-center uppercase tracking-wider font-rokkitt text-2xl">
                 <span className="text-sm px-[10px] text-gray-primary">❈</span>
                 {stack}
               </li>
             ) : (
-              <li key={uuidv4()} className="flex items-center uppercase tracking-wider font-rokkitt text-xl">
+              <li key={idx} className="flex items-center uppercase tracking-wider font-rokkitt text-xl">
                 <span className="text-xs px-[10px] text-gray-primary">❈</span>
                 {stack}
                 <span className="text-xs px-[10px] text-gray-primary">❈</span>
@@ -93,9 +92,9 @@ export const ProjectLayout = () => {
             <div>
               <p className="uppercase mr-2 text-sm tracking-wide mt-8 pb-2">COMPÉTENCES DÉVELOPPÉES</p>
               <ul>
-                {project.skills_developed?.map((skill: string) => {
+                {project.skills_developed?.map((skill: string, idx: number) => {
                   return (
-                    <li key={uuidv4()} className="list-outside pb-1 pl-4 text-gray-primary">
+                    <li key={idx} className="list-outside pb-1 pl-4 text-gray-primary">
                       ∙ {skill}
                     </li>
                   )

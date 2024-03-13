@@ -1,6 +1,7 @@
-import { MusicCard } from '@/components/Inspiration/MusicCard'
+import { MusicCard } from '@/components/MusicCard'
 import { AboutLayout } from '@/components/Layouts/AboutLayout'
 import { musics } from '@/utils/datas/music'
+import ProfilPicture from '@/components/About/PictureProfil'
 
 export default function About() {
   return (
@@ -8,6 +9,8 @@ export default function About() {
       <section id="about" className="relative mb-20 h-full">
         <AboutLayout />
       </section>
+
+      <ProfilPicture />
 
       <div className="w-full lg:relative lg:pt-[480px]">
         <section
@@ -19,10 +22,6 @@ export default function About() {
           })}
         </section>
       </div>
-
-      {/* <section id="inspiration" className="mb-20">
-          <Inspiration />
-        </section> */}
     </main>
   )
 }

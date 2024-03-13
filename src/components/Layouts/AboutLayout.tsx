@@ -1,4 +1,3 @@
-import ProfilPicture from '@/components/About/PictureProfil'
 import { Bio } from '@/components/About/Bio'
 import { CV } from '../About/CV'
 
@@ -9,7 +8,6 @@ export const AboutLayout = () => {
 
       <Bio />
       <CV />
-      <ProfilPicture />
     </div>
   )
 }
