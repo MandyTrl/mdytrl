@@ -9,13 +9,14 @@ export default function Home() {
     <main className="flex flex-col font-generalSans">
       <section id="home" className="h-screen relative">
         <div className="flex items-center font-bold text-[40px] lg:text-8xl uppercase lg:capitalize mt-60 pb-2">
-          <Image
+          {/* <Image
             src="assets/logomdytrl.svg"
             alt="mandy-thorel"
-            height={180}
-            width={180}
-            className="rounded-md w-24 h-24 lg:w-[180px] lg:h-[180px]"
-          />
+            height={160}
+            width={160}
+            className="rounded-md w-24 h-24 lg:w-[160px] lg:h-[160px]"
+          /> */}
+
           <h1>
             Développeuse <br></br> Fullstack
           </h1>

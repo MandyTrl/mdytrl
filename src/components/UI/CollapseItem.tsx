@@ -22,9 +22,9 @@ export const CollapseItem = ({ datas }: CollapseItemTypeProps) => {
       <div
         key={idx}
         className={clsx(
-          openIndex === idx && 'bg-slate-100',
+          openIndex === idx && 'bg-gray-secondary bg-opacity-30',
           isProfessionalExperience && 'hover:cursor-pointer',
-          'group flex flex-col justify-between px-2 py-3 duration-300 hover:bg-slate-100'
+          'group flex flex-col justify-between px-2 py-3 duration-300 hover:bg-gray-secondary hover:bg-opacity-30'
         )}
       >
         <div

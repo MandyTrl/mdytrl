@@ -21,7 +21,10 @@ export const Intro = () => {
         className="rounded-md"
       />
       <div className="flex flex-col items-center ml-2">
-        <p className="pb-6 border-b border-gray-primary bg-yel-secondary rounded-md p-4">👋 Hey !</p>
+        <p className="group cursor-pointer flex pb-6 border-b border-gray-primary bg-yel-secondary rounded-md p-4">
+          <p className="group-hover:rotate-6 duration-100 ease-linear mr-2">👋</p>
+          <p>Hey !</p>
+        </p>
         <p className="text-sm pt-2 lowercase">@coded with Next.JS</p>
       </div>
     </div>

@@ -1,7 +1,7 @@
 export const Bio = () => {
   return (
-    <div className="h-fit w-full lg:mb-28">
-      <div id="bio_txt" className="text-2xl">
+    <div className="h-fit w-full lg:mb-28 mb-10">
+      <div id="bio_txt" className="lg:text-2xl text-lg">
         <div>
           <p>
             Après une belle expérience dans le service client où l’adage est :

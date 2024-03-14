@@ -13,7 +13,7 @@ export const Stacks = () => {
             return (
               <div
                 key={`${stack.name}_${stack.id}`}
-                className="p-4 my-2 flex flex-col justify-around items-center border-[0.3px] border-gray-primary border-solid rounded-lg"
+                className="p-4 my-2 flex flex-col justify-around items-center border-[0.1px] border-gray-primary border-solid rounded-lg"
               >
                 <Image src={stack.logo} alt={`logo_${stack.name}`} width={40} height={40} />
                 <p className="text-sm">{stack.name}</p>
@@ -26,7 +26,7 @@ export const Stacks = () => {
             return (
               <div
                 key={`${stack.id}_${stack.name}`}
-                className="p-4 my-2 flex flex-col justify-around items-center border-[0.5px] border-gray-primary border-solid rounded-lg"
+                className="p-4 my-2 flex flex-col justify-around items-center border-[0.1px] border-gray-primary border-solid rounded-lg"
               >
                 <Image src={stack.logo} alt={`logo_${stack.name}`} width={40} height={40} />
                 <p className="text-sm">{stack.name}</p>

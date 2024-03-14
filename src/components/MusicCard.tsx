@@ -1,3 +1,5 @@
+'use client'
+import useIsDesktop from '@/utils/hooks/UseIsDesktop'
 import { musicType } from '@/utils/datas/music'
 
 export type MusicCardPropsType = {
@@ -7,10 +9,11 @@ export type MusicCardPropsType = {
 }
 
 export const MusicCard = ({ datas, index, numberOfItems }: MusicCardPropsType) => {
+  const isDesktop = useIsDesktop()
   const n = 6
   const translateX = `-${index * n}0%`
 
-  return (
+  return isDesktop ? (
     <div
       className="transform-all duration-500 ease-in-out opacity-80 lg:skew-y-6 drop-shadow-sm hover:cursor-pointer lg:hover:-translate-y-[120px] hover:opacity-90"
       style={{ zIndex: numberOfItems - index, translate: translateX }}
@@ -22,6 +25,17 @@ export const MusicCard = ({ datas, index, numberOfItems }: MusicCardPropsType) =
         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture;"
         loading="lazy"
         style={{ borderRadius: 0, width: '250px', height: '250px' }}
+      ></iframe>
+    </div>
+  ) : (
+    <div className="my-1 duration-300 ease-in-out opacity-80 lg:skew-y-6 drop-shadow-sm hover:cursor-pointer lg:hover:-translate-y-[120px] hover:opacity-90">
+      <iframe
+        style={{ borderRadius: '12px' }}
+        src={datas.link}
+        width="100%"
+        height="152"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
       ></iframe>
     </div>
   )

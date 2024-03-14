@@ -18,13 +18,14 @@ export const ProjectLayout = () => {
 
   return (
     <div>
-      <div className="relative h-[650px] w-full overflow-hidden rounded-b-2xl shadow-md">
+      <div className="relative lg:h-[650px] h-[350px] lg:w-full w-screen overflow-hidden rounded-b-2xl shadow-md">
         <img
           src={project.images[0]}
           alt={`screenshot-${project.images[0]}`}
-          className="absolute top-0 hover:scale-110 hover:cursor-pointer transform duration-500"
+          className="absolute top-0 w-fit hover:scale-110 hover:cursor-pointer transform duration-500"
         />
       </div>
+
       <div className="my-20">
         <div className="flex mt-4">
           <h1 className="font-bold text-6xl uppercase text-primary">{project.name}</h1>
@@ -41,11 +42,11 @@ export const ProjectLayout = () => {
           )}
         </div>
 
-        <ul className="w-full flex items-center border-y-[0.5px] border-solid border-gray-primary py-6 my-6">
+        <ul className="lg:w-full flex items-center border-y-[0.5px] border-solid border-gray-primary py-6 my-6">
           {project.stacks.map((stack: string, idx: number) => {
             return stack !== lastStack ? (
-              <li key={idx} className="flex items-center uppercase tracking-wider font-rokkitt text-2xl">
-                <span className="text-sm px-[10px] text-gray-primary">❈</span>
+              <li key={idx} className="flex items-center uppercase tracking-wider font-rokkitt text-lg lg:text-2xl">
+                <span className="text-xs px-[10px] text-gray-primary">❈</span>
                 {stack}
               </li>
             ) : (
@@ -82,13 +83,7 @@ export const ProjectLayout = () => {
         </div>
       </div>
 
-      <Image
-        src={project.images[1]}
-        alt={`screenshot-${project.images[1]}`}
-        width={950}
-        height={950}
-        className="group-hover:w-6 group-hover:h-6 group-hover:scale-110 group-hover:rotate-6 duration-100 group-hover:-translate-y-2 ease-in-out"
-      />
+      <img src={project.images[1]} alt={`screenshot-${project.images[1]}`} className="lg:w-[950px] w-screen" />
     </div>
   )
 }
