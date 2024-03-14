@@ -3,7 +3,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { projects } from '@/utils/datas/projects'
-import { Slider } from '@/components/UI/Slider'
 
 export const ProjectLayout = () => {
   const pathname = usePathname()
@@ -19,8 +18,13 @@ export const ProjectLayout = () => {
 
   return (
     <div>
-      <Slider images={project.images} />
-
+      <div className="relative h-[650px] w-full overflow-hidden rounded-b-2xl shadow-md">
+        <img
+          src={project.images[0]}
+          alt={`screenshot-${project.images[0]}`}
+          className="absolute top-0 hover:scale-110 hover:cursor-pointer transform duration-500"
+        />
+      </div>
       <div className="my-20">
         <div className="flex mt-4">
           <h1 className="font-bold text-6xl uppercase text-primary">{project.name}</h1>
@@ -77,6 +81,14 @@ export const ProjectLayout = () => {
           </div>
         </div>
       </div>
+
+      <Image
+        src={project.images[1]}
+        alt={`screenshot-${project.images[1]}`}
+        width={950}
+        height={950}
+        className="group-hover:w-6 group-hover:h-6 group-hover:scale-110 group-hover:rotate-6 duration-100 group-hover:-translate-y-2 ease-in-out"
+      />
     </div>
   )
 }

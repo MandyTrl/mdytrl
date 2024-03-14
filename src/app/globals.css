@@ -26,17 +26,17 @@ body {
   /* background-color: #f7fafc; */
   background-color: #ffff;
   color: var(--primary);
-  scrollbar-color: var(--yellow-color) var(--primary);
+  scrollbar-color: var(--yellow-color);
 }
 
 /* style scrollbar */
 body::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
   overflow: scroll;
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--primary);
+  background: #ffff;
   border-radius: 20px;
 }
 

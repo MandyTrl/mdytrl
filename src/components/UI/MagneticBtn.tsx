@@ -33,12 +33,12 @@ export const MagneticBtn = ({ title }: BtnTypeProps) => {
   }
 
   return (
-    <div id="magnetic_container" ref={btnRef} className="absolute top-20 right-0 duration-100 ease-linear">
+    <div id="magnetic_container" ref={btnRef} className="absolute top-20 lg:-right-20 duration-100 ease-linear">
       <button
         id="magnetic_btn"
         onMouseMove={(e) => onMouseMove(e)}
         onMouseOut={() => onMouseOut()}
-        className="rounded-full w-36 h-36 p-5 text-lg hover:scale-105 ease-out duration-300"
+        className="rounded-full w-[120px] h-[120px] p-5 text-lg hover:scale-105 ease-out duration-300"
       >
         <div ref={titleRef} className="duration-100 ease-linear">
           <Link href="/about">{title}</Link>

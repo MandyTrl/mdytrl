@@ -30,11 +30,7 @@ export const projects: ProjectType[] = [
       'Utilisation des différents hooks',
       'Gestion des états et des props'
     ],
-    images: [
-      '/assets/projects/kasa/kasa_desktop_1.png',
-      '/assets/projects/kasa/kasa_desktop_2.png',
-      '/assets/projects/kasa/kasa_desktop_3.png'
-    ],
+    images: ['/assets/projects/kasa/kasa_desktop_1.png', '/assets/projects/kasa/kasa2.jpg'],
     repo: 'https://github.com/MandyTrl/Kasa',
     site: 'https://kasa-oc-mt.vercel.app/'
   },
@@ -53,9 +49,7 @@ export const projects: ProjectType[] = [
     ],
     images: [
       '/assets/projects/monvieuxgrimoire/mon_vieux_grimoire1.png',
-      '/assets/projects/monvieuxgrimoire/mon_vieux_grimoire4.png',
-      '/assets/projects/monvieuxgrimoire/mon_vieux_grimoire2.png',
-      '/assets/projects/monvieuxgrimoire/mon_vieux_grimoire5.png'
+      '/assets/projects/monvieuxgrimoire/monvieuxgrimoire2.jpg'
     ],
     repo: 'https://github.com/MandyTrl/mdytrl'
   },
@@ -70,7 +64,7 @@ export const projects: ProjectType[] = [
       'Manipuler les éléments du DOM afin d’en faire un contenu dynamique',
       'Gérer les événements de l’utilisateur (click de la souris..)'
     ],
-    images: ['/assets/projects/sophiebluel/sophie_bluel_1.png', '/assets/projects/sophiebluel/sophie_bluel_4.png'],
+    images: ['/assets/projects/sophiebluel/sophie_bluel_1.png', '/assets/projects/sophiebluel/sophiebluel2.jpg'],
     repo: 'https://github.com/MandyTrl/Portfolio4Architect'
   },
   {
@@ -84,7 +78,7 @@ export const projects: ProjectType[] = [
       'Connaître et appliquer la réglementation WCAG',
       'Appliquer une bonne sémantique, Optimisation des imagess.'
     ],
-    images: ['/assets/projects/ninacarducci/nina_carducci_1.png'],
+    images: ['/assets/projects/ninacarducci/nina_carducci_1.png', '/assets/projects/ninacarducci/ninacarducci2.jpg'],
     repo: 'https://github.com/MandyTrl/Nina-Carducci-s-Portfolio',
     site: 'https://nina-carducci-s-portfolio-oc.vercel.app/',
     pdf: '/assets/projects/ninacarducci/audit_nina_carducci_after.pdf'
@@ -96,7 +90,7 @@ export const projects: ProjectType[] = [
     description:
       "Intégration de la page d'accueil vitrine fictif proposant des hébergements et activités dans la ville de son choix. Adapté également sur tablette et smartphone (responsive design).",
     skills_developed: ["Implémenter du contenu conformément à une maquette et l'adapter en responsive"],
-    images: ['/assets/projects/booki/booki_desktop_1.png'],
+    images: ['/assets/projects/booki/booki_desktop_1.png', '/assets/projects/booki/booki2.jpg'],
     repo: 'https://github.com/MandyTrl/Booki',
     site: 'https://booki-tau.vercel.app'
   }
