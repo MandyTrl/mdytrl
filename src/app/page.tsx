@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { TechnicalSkillsLayout } from '@/components/Layouts/TechnicalSkillsLayout'
 import { LocalTime } from '@/components/LocalTime'
 import { MagneticBtn } from '@/components/UI/MagneticBtn'
+import { Intro } from '@/components/About/Intro'
 
 export default function Home() {
   return (
@@ -22,19 +23,7 @@ export default function Home() {
 
         <LocalTime />
 
-        <div className="flex items-center justify-end text-[40px] lg:text-5xl lg:capitalize mt-2">
-          <h5 className="text-right uppercase border-r border-gray-primary pr-2 mr-4">
-            Mandy Thorel<br></br>
-            <span className="font-thin">Créative Front-end</span>
-          </h5>
-          <Image
-            src="/assets/photos/mt-street-art.jpeg"
-            alt="mandy-thorel-tokyo-street-art"
-            height={120}
-            width={120}
-            className="rounded-md"
-          />
-        </div>
+        <Intro />
 
         <MagneticBtn title="À propos" />
       </section>
