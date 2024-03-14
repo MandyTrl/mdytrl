@@ -14,14 +14,16 @@ export const projects: ProjectType[] = [
     name: 'mdytrl',
     type: 'Perso',
     stacks: ['NextJS', 'Typescript', 'Tailwind'],
-    description: "Portfolio regroupant les différents projets que j'ai pu développer",
+    description:
+      "MdyTrl, c'est mon portfolio, tout simplement ! Vous y trouverez les différents projets que j'ai pu développer. Au plaisir de travailler prochainement ensemble !",
     images: ['/assets/mdytrl.webp']
   },
   {
     name: 'Kasa',
     type: 'OpenClassRooms',
     stacks: ['React', 'Typescript', 'Sass'],
-    description: 'Application web répertoriant des annonces immobilières',
+    description:
+      'Kasa est une application web fictive répertoriant des annonces de location réalisée dans le cadre de ma formation.',
     skills_developed: [
       'React Router',
       'Création de composants réutilisables',
@@ -40,7 +42,8 @@ export const projects: ProjectType[] = [
     name: 'Mon vieux grimoire',
     type: 'OpenClassRooms',
     stacks: ['NodeJS', 'Express', 'MongoDB', 'Mongoose'],
-    description: "Création d'une API Rest pour un site de notation de livres",
+    description:
+      "Mon vieux grimoire est un site de notation de livres réalisé dans le cadre de ma formation. Conception d'une API Rest et modélisation de la base de données du site. Le design du site a légèrement été mis à jour également.",
     skills_developed: [
       'Création et gestion de routes, controlleurs et middlewares',
       'Stocker des données de manière sécurisée (token, hashage de mdp..)',
@@ -60,7 +63,8 @@ export const projects: ProjectType[] = [
     name: 'Sophie Buel',
     type: 'OpenClassRooms',
     stacks: ['JavaScript', 'CSS'],
-    description: "Portfolio d'une architecte d'intérieur",
+    description:
+      "Gestion du back office d'un portfolio fictif d'une architecte d'intérieur (formulaires, gestion des projets en étant authentifié..). Ce projet a été réalisé pendant ma période de formation Openclassrooms.",
     skills_developed: [
       "Récupérer les données d'un formulaire",
       'Manipuler les éléments du DOM afin d’en faire un contenu dynamique',
@@ -73,7 +77,8 @@ export const projects: ProjectType[] = [
     name: 'Nina Carducci',
     type: 'OpenClassRooms',
     stacks: ['HTML', 'SEO'],
-    description: "Porfolio d'une photographe",
+    description:
+      "Optimisation du porfolio d'une photographe en utilisant Lighthouse. Application de la réglementation WCAG, maîtrise de la sémantique et amélioration des performances liées aux images tout en fixant un bug.",
     skills_developed: [
       "Optimisation d'un site existant en utilisant des outils comme Lighthouse",
       'Connaître et appliquer la réglementation WCAG',
@@ -88,7 +93,8 @@ export const projects: ProjectType[] = [
     name: 'Booki',
     type: 'OpenClassRooms',
     stacks: ['HTML', 'CSS'],
-    description: 'Site vitrine proposant des hébergements et activités dans la ville de son choix',
+    description:
+      "Intégration de la page d'accueil vitrine fictif proposant des hébergements et activités dans la ville de son choix. Adapté également sur tablette et smartphone (responsive design).",
     skills_developed: ["Implémenter du contenu conformément à une maquette et l'adapter en responsive"],
     images: ['/assets/projects/booki/booki_desktop_1.png'],
     repo: 'https://github.com/MandyTrl/Booki',

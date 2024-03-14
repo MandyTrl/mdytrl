@@ -48,12 +48,13 @@ export const professional: ProfessionalExperiencesType[] = [
     company: 'Free',
     description: 'Développement et maintien des projets de communication internes et externes de la société',
     tasks: [
-      'Rendre les projets contribuables via Strapi, React et Next (ex: iliad.fr)',
+      'Rendre les projets contribuables via Strapi, React et Next (ex: https://www.iliad.fr/ )',
       'Participation à la refonte de projets (ex: portail.free.fr)',
-      "Aide à la conception d'un email builder",
+      "Aide à la conception d'un email builder (front end et back end) et de la création de sa base de données",
       'Initilisation de nouveaux projets',
+      'Développement de nouvelles fonctionnalités',
       'Mise en place de tests unitaires',
-      "Participation à la refonte du site Free Transfert, un service d'envoi et de partage de fichiers 📂"
+      'Participation à la refonte de projets (ex: https://portail.free.fr/, https://transfert.free.fr/ )'
     ],
     stacks: [
       'React',

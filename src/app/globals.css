@@ -23,7 +23,8 @@
 }
 
 body {
-  background-color: #f7fafc;
+  /* background-color: #f7fafc; */
+  background-color: #ffff;
   color: var(--primary);
   scrollbar-color: var(--yellow-color) var(--primary);
 }
@@ -52,7 +53,7 @@ body::-webkit-scrollbar-thumb {
 @keyframes scroll {
   0% {
     transform: translateY(0);
-    background: #f7fafc;
+    background: #ffff;
   }
   100% {
     transform: translateY(-100%);
@@ -64,7 +65,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .fade-stacks-cards {
-  background: radial-gradient(circle, transparent 70%, #f7fafc 100%);
+  background: radial-gradient(circle, transparent 70%, #ffff 100%);
 }
 
 /* animation pour le radius des bordures sur les socials links */
@@ -93,3 +94,15 @@ body::-webkit-scrollbar-thumb {
   background-position: 100% 100%;
   color: var(--primary);
 }
+
+#cv_btn {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+/* #cv_btn:hover {
+  background-position: 100% 100%;
+  transform: scale3d(105%);
+  animation-duration: 300ms;
+  letter-spacing: 5px;
+} */

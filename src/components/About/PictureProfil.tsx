@@ -9,10 +9,10 @@ export default function ProfilPicture() {
   const isRestoImg = imageUrl === '/assets/photos/resto.jpg'
 
   const labelStyle =
-    'w-32 text-center hover:cursor-pointer px-2 py-4 rounded-md bg-gray-primary bg-opacity-70 drop-shadow-md text-white uppercase tracking-wider text-xs border border-transparent duration-300 hover:scale-110 hover:bg-opacity-80 group-hover:duration-300 hover:text-yel-primary'
+    'w-60 text-center hover:cursor-pointer px-2 py-4 bg-yel-transparent rounded-md shadow text-primary uppercase text-sm border-[0.8px] border-gray-primary duration-300 hover:scale-110 hover:border-primary duration-300'
 
   return (
-    <div className="flex flex-col lg:flex-row items-center mb-16 group relative m-4 ml-0">
+    <div className="lg:w-full flex flex-col lg:flex-row lg:justify-around mb-16 group relative lg:m-0 m-4 ml-0">
       <Image
         alt="Mandy Thorel, photo en noir et blanc"
         src={imageUrl}
@@ -24,7 +24,8 @@ export default function ProfilPicture() {
           'drop-shadow rounded-md transition duration-700 h-[834px] object-cover hover:saturate-100 hover:cursor-pointer'
         )}
       />
-      <div className="lg:[&>span]:my-2 flex flex-wrap lg:flex-col lg:absolute lg:-right-20 m-1 lg:m-0">
+
+      <div className="lg:[&>span]:my-2 flex flex-wrap lg:flex-col lg:justify-between m-1 lg:m-0">
         <span
           className={`${labelStyle}`}
           onMouseEnter={() => setImgUrl('/assets/photos/design.jpg')}
