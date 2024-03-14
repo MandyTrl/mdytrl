@@ -1,6 +1,6 @@
 export const Bio = () => {
   return (
-    <div className="h-fit w-full">
+    <div className="h-fit w-full lg:mb-28">
       <div id="bio_txt" className="text-2xl">
         <div>
           <p>

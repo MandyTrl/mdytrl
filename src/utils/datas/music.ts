@@ -34,5 +34,10 @@ export const musics: musicType[] = [
     title: 'Technologic',
     artist: 'Daft Punk',
     link: 'https://open.spotify.com/embed/track/1iNeZGJsoC0D7ZyJTdIbDS'
+  },
+  {
+    title: 'Discoproof',
+    artist: 'La Roux - Chromeo',
+    link: 'https://open.spotify.com/embed/track/0CQcUsyDEfKsHWDDF3h2C1'
   }
 ]

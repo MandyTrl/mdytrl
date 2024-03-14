@@ -99,10 +99,3 @@ body::-webkit-scrollbar-thumb {
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
-
-/* #cv_btn:hover {
-  background-position: 100% 100%;
-  transform: scale3d(105%);
-  animation-duration: 300ms;
-  letter-spacing: 5px;
-} */

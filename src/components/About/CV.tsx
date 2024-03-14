@@ -12,7 +12,7 @@ export const CV = () => {
 
       <button
         id="cv_btn"
-        className="flex items-center lg:my-4 justify-center ml-6 rounded-md px-3 py-2 bg-gray-100 text-primary hover:px-6 hover:bg-yel-primary hover:border-transparent transform ease-in-out duration-300 tracking-widest text-sm uppercase"
+        className="flex items-center lg:my-4 justify-center ml-6 rounded-md px-3 py-2 bg-gray-secondary bg-opacity-30 text-primary hover:px-6 hover:bg-yel-primary hover:border-transparent transform ease-in-out duration-300 tracking-widest text-sm uppercase"
       >
         <Link href="/assets/cv-dev-full-stack-mandy-thorel.pdf" download target="_blank">
           Télécharger le CV
