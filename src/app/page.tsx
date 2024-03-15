@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="flex flex-col font-generalSans">
       <section id="home" className="h-screen relative">
-        <div className="flex items-center font-bold text-[40px] lg:text-8xl uppercase lg:capitalize mt-60 pb-2">
+        <div className="flex items-center font-bold text-[40px] lg:text-8xl uppercase lg:capitalize mt-10 lg:mt-60 pb-2">
           {/* <Image
             src="assets/logomdytrl.svg"
             alt="mandy-thorel"
@@ -17,7 +17,7 @@ export default function Home() {
             className="rounded-md w-24 h-24 lg:w-[160px] lg:h-[160px]"
           /> */}
 
-          <h1>
+          <h1 className="leading-9 lg:leading-none">
             Développeuse <br></br> Fullstack
           </h1>
         </div>
