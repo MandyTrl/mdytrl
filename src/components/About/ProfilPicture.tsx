@@ -112,7 +112,7 @@ export default function ProfilPicture() {
           '[&>*]:mx-1 opacity-0 bg-white bg-opacity-80 absolute lg:top-[84%] top-[20%] lg:left-20 left-[10%] py-3 px-4 rounded-lg drop-shadow-lg flex items-center justify-between'
         )}
       >
-        <Image alt="compte mapstr" src="/assets/inspirations/stuff/mapstr_logo.png" width={45} height={45} priority />
+        <Image alt="compte mapstr" src="/assets/icons/mapstr.png" width={45} height={45} priority />
         <div className="ml-4">
           <p>
             Mon compte <span className="font-semibold">Mapstr</span>

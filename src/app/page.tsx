@@ -29,7 +29,7 @@ export default function Home() {
         <MagneticBtn title="À propos" />
       </section>
 
-      <section id="projects" className="flex flex-col h-screen">
+      <section id="projects" className="flex flex-col h-screen mt-20">
         <div className="text-6xl mb-12">Projets</div>
         <TechnicalSkillsLayout />
       </section>

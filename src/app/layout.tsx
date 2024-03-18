@@ -18,12 +18,12 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
-        <link rel="icon" href="/assets/logomdytrl.svg" sizes="88px" />
+        <link rel="icon" href="/assets/logomdytrl.svg" />
       </head>
       <body className={`${rokkitt.variable} ${generalSans.variable}`}>
         {/* <PreLoader /> */}
         <Navbar />
-        <div className="w-full pt-14 px-6 lg:px-96">{children}</div>
+        <div className="w-full pt-14 px-6 lg:px-[320px]">{children}</div>
         <Footer />
       </body>
     </html>
