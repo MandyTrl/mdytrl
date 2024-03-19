@@ -26,7 +26,7 @@ export default function Home() {
 
         <Intro />
 
-        <MagneticBtn title="À proposss" />
+        <MagneticBtn title="À propos" />
       </section>
 
       <section id="projects" className="flex flex-col h-screen lg:mt-72 lg:mb-20">
