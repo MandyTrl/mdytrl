@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import UseIsDesktop from '@/utils/hooks/useIsDesktop'
+import UseIsDesktop from '@/utils/hooks/UseIsDesktop'
 
 export const Intro = () => {
   const isDesktop = UseIsDesktop()
@@ -27,7 +27,7 @@ export const Intro = () => {
         className="rounded-md"
       />
 
-      <div className="flex flex-col items-center ml-2 text-2xl">
+      <div className="flex flex-col items-center ml-2">
         <div className="group cursor-pointer flex border-b border-gray-primary bg-yel-secondary rounded-md p-4">
           <p className="group-hover:rotate-6 duration-100 ease-linear mr-2">👋</p>
           <p>Hey !</p>

@@ -1,6 +1,6 @@
 'use client'
 import { musicType } from '@/utils/datas/music'
-import UseIsDesktop from '@/utils/hooks/useIsDesktop'
+import UseIsDesktop from '@/utils/hooks/UseIsDesktop'
 
 export type MusicCardPropsType = {
   index: number
