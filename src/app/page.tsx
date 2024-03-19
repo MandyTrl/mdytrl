@@ -7,7 +7,7 @@ import { Intro } from '@/components/About/Intro'
 export default function Home() {
   return (
     <main className="flex flex-col font-generalSans">
-      <section id="home" className="h-screen relative">
+      <section id="home" className="relative">
         <div className="flex items-center font-bold text-[40px] lg:text-8xl uppercase lg:capitalize mt-10 lg:mt-60 pb-2">
           {/* <Image
             src="assets/logomdytrl.svg"
@@ -29,7 +29,7 @@ export default function Home() {
         <MagneticBtn title="À propos" />
       </section>
 
-      <section id="projects" className="flex flex-col h-screen mt-20">
+      <section id="projects" className="flex flex-col h-screen lg:mt-72 lg:mb-20">
         <div className="text-6xl mb-12">Projets</div>
         <TechnicalSkillsLayout />
       </section>

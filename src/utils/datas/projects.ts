@@ -11,6 +11,24 @@ type ProjectType = {
 }
 export const projects: ProjectType[] = [
   {
+    name: 'Portail Free',
+    type: 'Professionnel',
+    stacks: ['NextJS', 'Typescript', 'Tailwind'],
+    description:
+      "Le Portail de Free est un site référençant toutes les actualités sur le sport, la santé, la société mais également celles dédiées à Free et à ses offres. Participation à la refonte du site Portail de Free (récupération des flux pour les actualités à la une, implémentation du breadcrumb et du summary footer, gestion de la pagination 'voir plus'..).",
+    images: ['/assets/projects/portail/portail2.png', '/assets/projects/portail/portailm2.jpg'],
+    site: 'https://portail.free.fr/'
+  },
+  {
+    name: 'Free Transfert',
+    type: 'Professionnel',
+    stacks: ['NextJS', 'Typescript', 'Tailwind'],
+    description:
+      "Free Transfert est un service on vous pouvez envoyer vos fichiers, jusqu'à 50 destinataires avec une durée de validité jusqu'à 30 jours. Participation à la refonte du site Free Transfert (design responsive, affichage conditionnel en fonction de l'offre de l'utilisateur).",
+    images: ['/assets/projects/freetransfert/free-transfert2.png', '/assets/projects/freetransfert/freetransfert2.jpg'],
+    site: 'https://transfert.free.fr/upload'
+  },
+  {
     name: 'mdytrl',
     type: 'Perso',
     stacks: ['NextJS', 'Typescript', 'Tailwind'],

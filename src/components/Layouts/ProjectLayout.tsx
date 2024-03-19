@@ -18,7 +18,7 @@ export const ProjectLayout = () => {
 
   return (
     <div>
-      <div className="relative lg:h-[650px] h-[350px] lg:w-full w-screen overflow-hidden rounded-b-2xl shadow-md">
+      <div className="relative w-fit lg:h-[650px] h-[350px] lg:w-full overflow-hidden rounded-b-2xl shadow-md">
         <img
           src={project.images[0]}
           alt={`screenshot-${project.images[0]}`}
@@ -28,7 +28,7 @@ export const ProjectLayout = () => {
 
       <div className="my-20">
         <div className="flex mt-4">
-          <h1 className="font-bold text-6xl uppercase text-primary">{project.name}</h1>
+          <h1 className="font-bold text-5xl lg:text-6xl uppercase text-primary">{project.name}</h1>
           {project.repo && (
             <Link href={project.repo} target="_blank" className="group hover:cursor-pointer ml-2 text-primary">
               <Image
@@ -42,18 +42,18 @@ export const ProjectLayout = () => {
           )}
         </div>
 
-        <ul className="lg:w-full flex items-center border-y-[0.5px] border-solid border-gray-primary py-6 my-6">
+        <ul className="lg:w-full flex items-center border-y-[0.5px] border-solid border-gray-primary py-4 my-4 lg:py-6 lg:my-6">
           {project.stacks.map((stack: string, idx: number) => {
             return stack !== lastStack ? (
-              <li key={idx} className="flex items-center uppercase tracking-wider font-rokkitt text-lg lg:text-2xl">
+              <li key={idx} className="flex items-center uppercase tracking-wider font-rokkitt text-base lg:text-2xl">
                 <span className="text-xs px-[10px] text-gray-primary">❈</span>
                 {stack}
               </li>
             ) : (
-              <li key={idx} className="flex items-center uppercase tracking-wider font-rokkitt text-xl">
+              <li key={idx} className="flex items-center uppercase tracking-wider font-rokkitt text-base lg:text-2xl">
                 <span className="text-xs px-[10px] text-gray-primary">❈</span>
                 {stack}
-                <span className="text-xs px-[10px] text-gray-primary">❈</span>
+                <span className="text-xs pl-[10px] text-gray-primary">❈</span>
               </li>
             )
           })}
@@ -83,7 +83,7 @@ export const ProjectLayout = () => {
         </div>
       </div>
 
-      <img src={project.images[1]} alt={`screenshot-${project.images[1]}`} className="lg:w-[950px] w-screen" />
+      <img src={project.images[1]} alt={`screenshot-${project.images[1]}`} className="w-screen lg:w-[950px] mx-auto" />
     </div>
   )
 }
