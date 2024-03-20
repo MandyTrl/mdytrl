@@ -7,8 +7,8 @@ export const Intro = () => {
 
   return isDesktop ? (
     <div id="desktop_intro" className="flex items-center justify-end text-5xl capitalize mt-2">
-      <div className="text-right uppercase">
-        <h5>Mandy Thorel</h5>
+      <div className="flex flex-col justify-between text-right uppercase mr-4">
+        <h2>Mandy Thorel</h2>
 
         <div className="flex items-center font-thin">
           <p>Créative</p>
@@ -17,18 +17,11 @@ export const Intro = () => {
         </div>
       </div>
 
-      <p
-        className="h-28 text-2xl text-center uppercase border-r border-l border-gray-primary px-2 mx-2 tracking-[0.2em]"
-        style={{ writingMode: 'vertical-rl' }}
-      >
-        Paris
-      </p>
-
       <Image
         src="/assets/photos/mt-street-art.jpeg"
         alt="mandy-thorel-tokyo-street-art"
-        height={130}
-        width={130}
+        height={150}
+        width={150}
         className="rounded-md"
       />
 
@@ -42,13 +35,11 @@ export const Intro = () => {
     </div>
   ) : (
     <div id="mobile_intro" className="flex capitalize mt-2">
-      <div className="flex flex-col items-end mr-2">
+      <div className="flex flex-col items-end  mr-2">
         <div className="text-right uppercase">
           <h5>Mandy Thorel</h5>
           <div className="font-thin">Créative Front-end</div>
         </div>
-
-        <p className="w-fit text-center uppercase border-y border-gray-primary px-2 tracking-wide italic">Paris</p>
       </div>
 
       <div className="flex flex-col items-center">

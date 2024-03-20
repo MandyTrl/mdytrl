@@ -100,28 +100,9 @@ body::-webkit-scrollbar-thumb {
   text-orientation: upright;
 }
 
-.divider {
-  display: flex;
-
-  &:before,
-  &:after {
-    content: '';
-    flex: 1;
-  }
-}
-
-.line {
-  align-items: center;
-
-  &:before,
-  &:after {
-    height: 0.8px;
-  }
-}
-
-.one-line {
-  &:before,
-  &:after {
-    background: var(--primary);
-  }
+.separator {
+  position: relative;
+  border: none;
+  height: 0.8px;
+  background-color: var(--primary);
 }

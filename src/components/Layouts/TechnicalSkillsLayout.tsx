@@ -7,7 +7,7 @@ export const TechnicalSkillsLayout = () => {
   const isDesktop = UseIsDesktop()
 
   return (
-    <aside className="w-full p-40 flex flex-col lg:flex-row items-center bg-yel-secondary">
+    <aside className="w-full p-40 pb-10 flex flex-col lg:flex-row items-center">
       {/* {isDesktop && <Stacks />} */}
       <ProjectsList />
     </aside>
