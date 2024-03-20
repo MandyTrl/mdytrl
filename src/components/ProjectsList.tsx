@@ -3,13 +3,15 @@ import Image from 'next/image'
 import { projects } from '@/utils/datas/projects'
 
 export const ProjectsList = () => {
+  const profectsSelected = projects.filter((project) => project.name !== 'Sophie Buel' && project.name !== 'Booki')
+
   return (
-    <div className="lg:w-5/6 h-full">
-      {projects.map((project, index) => {
+    <div className="w-full h-[400px] overflow-scroll border-[0.8px] border-primary bg-white px-8">
+      {profectsSelected.map((project, index) => {
         return (
           <div
             key={index}
-            className="element-hover group py-10 hover:cursor-pointer last:border-b border-t border-primary"
+            className="element-hover group py-8 lg:py-10 hover:cursor-pointer first:border-0 border-t-[0.8px] border-primary"
           >
             <Link href={`/projects/${project.name}`}>
               <div className="flex justify-between px-1">

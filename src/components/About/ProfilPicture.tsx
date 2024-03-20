@@ -16,12 +16,12 @@ export default function ProfilPicture() {
       <Image
         alt="Mandy Thorel, photo en noir et blanc"
         src={imageUrl}
-        width={480}
+        width={490}
         height={730}
         priority
         className={clsx(
           isProfilImg && 'saturate-0',
-          'drop-shadow rounded-md transition duration-700 w-screen lg:w-fit lg:h-[730px] object-cover hover:saturate-100 hover:cursor-pointer'
+          'drop-shadow rounded-md transition duration-700 w-screen lg:w-[490px] lg:h-[730px] object-cover hover:saturate-100 hover:cursor-pointer'
         )}
       />
 
@@ -109,16 +109,17 @@ export default function ProfilPicture() {
         id="mapstr"
         className={clsx(
           isRestoImg && 'opacity-100',
-          '[&>*]:mx-1 opacity-0 bg-white bg-opacity-80 absolute lg:top-[84%] top-[20%] lg:left-20 left-[10%] py-3 px-4 rounded-lg drop-shadow-lg flex items-center justify-between'
+          '[&>*]:mx-1 opacity-0 bg-white bg-opacity-80 absolute lg:top-[84%] top-[20%] lg:left-20 left-[10%] py-3 px-4 rounded-lg drop-shadow-lg flex text-center items-center justify-between'
         )}
       >
-        <Image alt="compte mapstr" src="/assets/icons/mapstr.png" width={45} height={45} priority />
-        <div className="ml-4">
+        <div>
+          <div className="flex justify-center">
+            <p>Mon compte</p>
+            <Image alt="compte mapstr" src="/assets/icons/mapstr.png" width={80} height={0} priority className="mx-1" />
+          </div>
+
           <p>
-            Mon compte <span className="font-semibold">Mapstr</span>
-          </p>
-          <p>
-            <span className="text-lg underline text-blue-500">@mandy.tho</span>
+            <span className="underline text-blue-500">@mandy.tho</span>
             <span> 😋🍴</span>
           </p>
         </div>
