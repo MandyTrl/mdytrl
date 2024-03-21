@@ -6,29 +6,23 @@ export const Intro = () => {
   const isDesktop = UseIsDesktop()
 
   return isDesktop ? (
-    <div id="desktop_intro" className="flex items-center justify-end text-3xl capitalize mt-2">
-      <div className="flex flex-col justify-between text-right uppercase mr-4">
+    <div id="desktop_intro" className="w-full flex items-center justify-end text-3xl capitalize my-4">
+      <div className="w-full mr-3 flex flex-col text-right uppercase">
         <h2>Mandy Thorel</h2>
 
-        <div className="flex items-center font-thin">
+        <div className="flex items-center justify-end font-thin">
           <p>Créative</p>
-          <Image src="assets/icons/dots-square.svg" alt="mandy-thorel" height={33} width={33} className="mx-1" />
+          <Image src="assets/icons/dots-square.svg" alt="mandy-thorel" height={33} width={33} />
           <p>Front-end</p>
         </div>
       </div>
 
-      <Image
-        src="/assets/logomdytrl.svg"
-        alt="mandy-thorel-tokyo-street-art"
-        height={120}
-        width={120}
-        className="rounded-md"
-      />
+      <Image src="/assets/logomdytrl.svg" alt="" height={80} width={80} className="rounded-md" />
 
-      <div className="flex flex-col items-center ml-2">
-        <div className="group cursor-pointer flex border-b border-gray-primary bg-yel-secondary rounded-md p-4">
+      <div className="w-[18%] ml-3 flex flex-col items-center">
+        <div className="group cursor-pointer text-2xl flex border-b border-gray-primary bg-[#2185dd8a] rounded-md p-3">
           <p className="group-hover:rotate-6 duration-100 ease-linear mr-2">👋</p>
-          <p>Hey !</p>
+          <p className="text-white">Hey !</p>
         </div>
         <p className="text-sm mt-2 lowercase">@coded with Next.JS</p>
       </div>
@@ -43,15 +37,9 @@ export const Intro = () => {
       </div>
 
       <div className="flex flex-col items-center">
-        <Image
-          src="/assets/photos/mt-street-art.jpeg"
-          alt="mandy-thorel-tokyo-street-art"
-          height={130}
-          width={130}
-          className="rounded-md"
-        />
+        <Image src="/assets/photos/mt-street-art.jpeg" alt="" height={100} width={100} className="rounded-md" />
 
-        <div className="group cursor-pointer flex border-b border-gray-primary bg-yel-secondary rounded-md p-2">
+        <div className="group cursor-pointer flex border-b border-gray-primary rounded-md p-2">
           <p className="group-hover:rotate-6 duration-100 ease-linear mr-2">👋</p>
           <p>Hey !</p>
         </div>
