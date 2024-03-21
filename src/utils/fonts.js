@@ -3,47 +3,47 @@ import localFont from 'next/font/local'
 export const rokkitt = localFont({
   src: [
     {
-      path: '../../public/fonts/rokkitt/rokkitt-Thin.ttf',
+      path: '../../public/fonts/Rokkitt/Rokkitt-Thin.ttf',
       weight: '100',
       style: 'normal'
     },
     {
-      path: '../../public/fonts/rokkitt/rokkitt-Extralight.ttf',
+      path: '../../public/fonts/Rokkitt/Rokkitt-Extralight.ttf',
       weight: '200',
       style: 'normal'
     },
     {
-      path: '../../public/fonts/rokkitt/rokkitt-Light.ttf',
+      path: '../../public/fonts/Rokkitt/Rokkitt-Light.ttf',
       weight: '300',
       style: 'normal'
     },
     {
-      path: '../../public/fonts/rokkitt/rokkitt-Regular.ttf',
+      path: '../../public/fonts/Rokkitt/Rokkitt-Regular.ttf',
       weight: '400',
       style: 'normal'
     },
     {
-      path: '../../public/fonts/rokkitt/rokkitt-Medium.ttf',
+      path: '../../public/fonts/Rokkitt/Rokkitt-Medium.ttf',
       weight: '500',
       style: 'normal'
     },
     {
-      path: '../../public/fonts/rokkitt/rokkitt-Semibold.ttf',
+      path: '../../public/fonts/Rokkitt/Rokkitt-Semibold.ttf',
       weight: '600',
       style: 'normal'
     },
     {
-      path: '../../public/fonts/rokkitt/rokkitt-Bold.ttf',
+      path: '../../public/fonts/Rokkitt/Rokkitt-Bold.ttf',
       weight: '700',
       style: 'normal'
     },
     {
-      path: '../../public/fonts/rokkitt/rokkitt-ExtraBold.ttf',
+      path: '../../public/fonts/Rokkitt/Rokkitt-ExtraBold.ttf',
       weight: '800',
       style: 'normal'
     }
   ],
-  variable: '--font-rokkitt'
+  variable: '--font-Rokkitt'
 })
 
 export const generalSans = localFont({

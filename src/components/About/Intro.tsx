@@ -1,9 +1,9 @@
 'use client'
 import Image from 'next/image'
-import UseIsDesktop from '@/utils/hooks/UseIsDesktop'
+import usIsDesktop from '@/utils/hooks/useIsDesktop'
 
 export const Intro = () => {
-  const isDesktop = UseIsDesktop()
+  const isDesktop = usIsDesktop()
 
   return isDesktop ? (
     <div id="desktop_intro" className="w-full flex items-center justify-end text-3xl capitalize my-4">

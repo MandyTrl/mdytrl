@@ -1,6 +1,6 @@
 'use client'
 import { musicType } from '@/utils/datas/music'
-import UseIsDesktop from '@/utils/hooks/UseIsDesktop'
+import usIsDesktop from '@/utils/hooks/useIsDesktop'
 
 export type MusicCardPropsType = {
   index: number
@@ -9,7 +9,7 @@ export type MusicCardPropsType = {
 }
 
 export const MusicCard = ({ datas, index, numberOfItems }: MusicCardPropsType) => {
-  const isDesktop = UseIsDesktop()
+  const isDesktop = usIsDesktop()
   const n = 6
   const translateX = `-${index * n}0%`
 

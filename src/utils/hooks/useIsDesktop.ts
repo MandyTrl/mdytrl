@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-function UseIsDesktop() {
+function useIsDesktop() {
   const [isDesktop, setIsDesktop] = useState(false)
 
   useEffect(() => {
@@ -20,4 +20,4 @@ function UseIsDesktop() {
   return isDesktop
 }
 
-export default UseIsDesktop
+export default useIsDesktop
