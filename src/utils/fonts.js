@@ -8,7 +8,7 @@ export const rokkitt = localFont({
       style: 'normal'
     },
     {
-      path: '../../public/fonts/Rokkitt/Rokkitt-Extralight.ttf',
+      path: '../../public/fonts/Rokkitt/Rokkitt-ExtraLight.ttf',
       weight: '200',
       style: 'normal'
     },
@@ -28,7 +28,7 @@ export const rokkitt = localFont({
       style: 'normal'
     },
     {
-      path: '../../public/fonts/Rokkitt/Rokkitt-Semibold.ttf',
+      path: '../../public/fonts/Rokkitt/Rokkitt-SemiBold.ttf',
       weight: '600',
       style: 'normal'
     },
