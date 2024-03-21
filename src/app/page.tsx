@@ -4,16 +4,21 @@ import { Intro } from '@/components/About/Intro'
 
 export default function Home() {
   return (
-    <section id="home" className="flex flex-col items-center">
-      <div className="flex flex-col items-center text-[33px] uppercase">
-        <img src="/assets/photos/mt-berlin.webp" alt="mandy-thorel" className="lg:w-[70%]" />
+    <section id="home" className="flex flex-col items-center justify-start">
+      <div className="h-full flex flex-col items-center">
+        <div className="relative w-full h-[195px] lg:w-[850px] lg:h-[450px] overflow-hidden">
+          <img src="/assets/photos/mt-berlin.webp" alt="mandy-thorel" className="absolute bottom-0 w-full h-fit" />
+        </div>
 
-        <h1 className="leading-9 lg:leading-none text-[58px] py-2">Développeuse Full stack</h1>
+        <h1 className="leading-9 lg:leading-none uppercase text-xl lg:text-[65px] py-4 px-4 lg:px-0">
+          Développeuse Full stack
+        </h1>
       </div>
 
-      <LocalTime />
-
-      <Intro />
+      <div className="w-full flex flex-col justify-center">
+        <LocalTime />
+        <Intro />
+      </div>
     </section>
   )
 }

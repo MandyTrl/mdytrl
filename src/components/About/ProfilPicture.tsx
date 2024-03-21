@@ -116,18 +116,22 @@ export default function ProfilPicture() {
         id="mapstr"
         className={clsx(
           isRestoImg && 'opacity-100',
-          '[&>*]:mx-1 opacity-0 bg-white bg-opacity-80 absolute lg:top-[84%] top-[20%] lg:left-20 left-[10%] py-3 px-4 rounded-lg drop-shadow-lg flex text-center items-center justify-between'
+          '[&>*]:mx-1 opacity-0 bg-primary bg-opacity-80 absolute lg:top-[86%] top-[20%] lg:left-36 left-[10%] py-3 px-4 rounded-lg drop-shadow-lg flex text-center items-center justify-between'
         )}
       >
-        <div>
-          <div className="flex justify-center">
-            <p>Mon compte</p>
-            <Image alt="compte mapstr" src="/assets/icons/mapstr.png" width={80} height={0} priority className="mx-1" />
-          </div>
+        <div className="flex flex-col">
+          <Image
+            alt="compte mapstr"
+            src="/assets/icons/mapstr.png"
+            width={107}
+            height={0}
+            priority
+            className="mx-1 mb-1"
+          />
 
           <p>
-            <span className="underline text-blue-500">@mandy.tho</span>
-            <span> 😋🍴</span>
+            <span className="underline text-white">@mandy.tho</span>
+            <span> 😋</span>
           </p>
         </div>
       </div>

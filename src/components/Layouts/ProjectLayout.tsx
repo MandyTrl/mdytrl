@@ -1,15 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
-import { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { projects } from '@/utils/datas/projects'
-
-export const metadata: Metadata = {
-  title: 'Mandy Thorel - À propos',
-  description: 'Présentation du projet'
-}
 
 export const ProjectLayout = () => {
   const pathname = usePathname()
