@@ -7,7 +7,7 @@ export const Intro = () => {
       <div className="mr-2 lg:mr-3 flex flex-col text-right uppercase">
         <h2>Mandy Thorel</h2>
 
-        <div className="flex items-center justify-end font-thin">
+        <div className="flex items-center font-thin">
           <p>Créative</p>
           <Image
             src="assets/icons/dots-square.svg"
@@ -25,7 +25,7 @@ export const Intro = () => {
         alt=""
         height={70}
         width={70}
-        className="w-12 h-12 lg:w-[70px] lg:h-[70px]rounded-md"
+        className="w-12 h-12 lg:w-[70px] lg:h-[70px] rounded-md"
       />
     </div>
   )
