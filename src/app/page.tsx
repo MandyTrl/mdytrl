@@ -8,9 +8,7 @@ export default function Home() {
       <div className="flex flex-col items-center text-[33px] lg:text-[5.7rem] uppercase">
         <img src="/assets/photos/mt-berlin.webp" alt="mandy-thorel" className="lg:w-[70%]" />
 
-        <h1 className="leading-9 lg:leading-none">
-          Développeuse <br></br> Full stack
-        </h1>
+        <h1 className="leading-9 lg:leading-none text-[51px] py-2">Développeuse Full stack</h1>
       </div>
 
       <LocalTime />

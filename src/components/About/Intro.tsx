@@ -6,7 +6,7 @@ export const Intro = () => {
   const isDesktop = UseIsDesktop()
 
   return isDesktop ? (
-    <div id="desktop_intro" className="flex items-center justify-end text-5xl capitalize mt-2">
+    <div id="desktop_intro" className="flex items-center justify-end text-3xl capitalize mt-2">
       <div className="flex flex-col justify-between text-right uppercase mr-4">
         <h2>Mandy Thorel</h2>
 
@@ -18,10 +18,10 @@ export const Intro = () => {
       </div>
 
       <Image
-        src="/assets/photos/mt-street-art.jpeg"
+        src="/assets/logomdytrl.svg"
         alt="mandy-thorel-tokyo-street-art"
-        height={150}
-        width={150}
+        height={120}
+        width={120}
         className="rounded-md"
       />
 
