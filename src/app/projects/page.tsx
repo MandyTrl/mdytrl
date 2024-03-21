@@ -1,6 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
+import { Metadata } from 'next'
 import { ProjectsList } from '@/components/ProjectsList'
 import { MagneticBtn } from '@/components/UI/MagneticBtn'
+
+export const metadata: Metadata = {
+  title: 'Mandy Thorel - Projets',
+  description: 'Sélection de projets développés et les stacks techniques utilisées'
+}
 
 export default function Projects() {
   return (
@@ -15,7 +21,7 @@ export default function Projects() {
             />
           </div>
 
-          <h4 className="lg:text-8xl text-5xl text-primary pl-2">Projets</h4>
+          <h1 className="lg:text-8xl text-5xl text-primary pl-2">Projets</h1>
         </div>
         <div className="w-full flex flex-col lg:flex-row items-center">
           <ProjectsList />

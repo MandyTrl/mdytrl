@@ -8,7 +8,7 @@ import { PreLoader } from '@/components/PreLoader'
 
 export const metadata: Metadata = {
   title: 'Mandy Thorel - Portfolio',
-  description: 'Développeuse fullstack, voici mes derniers projets réalisés'
+  description: 'Développeuse full stack, voici mes derniers projets réalisés'
 }
 
 export default function RootLayout({
@@ -29,7 +29,7 @@ export default function RootLayout({
         <main className="bg-white w-[calc(100%-80)] overflow-y-auto mx-4 lg:mx-80 flex flex-grow justify-center font-generalSans border-l-[0.8px] border-r-[0.8px] border-primary">
           {children}
         </main>
-        <div className="absolute lg:bottom-28 bg-transparent w-full flex justify-between">
+        <div className="absolute hidden lg:flex lg:bottom-28 bg-transparent w-full justify-between">
           <div className="flex items-center ml-8 px-2 uppercase animate-bounce font-rokkitt bg-white border-[0.5px] border-primary">
             <Image src="/assets/icons/arrow-right.svg" alt="" width={10} height={10} className="rotate-90 mr-1" />
             <p className="text-xs">Me contacter </p>

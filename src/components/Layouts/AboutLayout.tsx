@@ -5,7 +5,7 @@ import { SkillsSection } from '../About/SkillsSection'
 export const AboutLayout = () => {
   return (
     <div className="h-full w-full flex flex-col items-center text-gray-primary lg:mt-32 mt-10">
-      <h4 className="lg:text-8xl text-5xl border-b border-gray-secondary lg:pb-28 pb-10 lg:mb-14 mb-6 text-primary">
+      <h4 className="lg:text-8xl text-4xl border-b border-gray-secondary lg:pb-28 pb-10 lg:mb-14 mb-6 text-primary">
         Donner forme aux idées
       </h4>
 

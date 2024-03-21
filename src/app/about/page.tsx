@@ -1,6 +1,13 @@
+import { Metadata } from 'next'
 import { AboutLayout } from '@/components/Layouts/AboutLayout'
 import { MusicLayout } from '@/components/Layouts/MusicLayout'
 import ProfilPicture from '@/components/About/ProfilPicture'
+
+export const metadata: Metadata = {
+  title: 'Mandy Thorel - À propos',
+  description:
+    'Mon parcours, mes compétences, mes inspirations. Téléchargez mon CV ou venez découvrir mes musiques préferées !'
+}
 
 export default function About() {
   return (
@@ -10,9 +17,9 @@ export default function About() {
       </section>
 
       <div className="w-full flex flex-col items-center">
-        <h4 className="lg:text-6xl text-4xl mt-32 border-b border-gray-secondary lg:pb-10 pb-4 mb-14">
+        <h5 className="lg:text-4xl text-3xl mt-16 lg:mt-32 border-b border-gray-secondary lg:pb-7 pb-4 lg:mb-14">
           Les choses qui m&apos;enthousiasment
-        </h4>
+        </h5>
         <ProfilPicture />
       </div>
 
