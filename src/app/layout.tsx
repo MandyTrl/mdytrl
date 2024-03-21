@@ -4,7 +4,6 @@ import './globals.css'
 import { rokkitt, generalSans } from '@/utils/fonts'
 import { Navbar } from '@/components/Navigation/Navbar'
 import { Footer } from '@/components/Footer/Footer'
-import { PreLoader } from '@/components/PreLoader'
 
 export const metadata: Metadata = {
   title: 'Mandy Thorel - Portfolio',
@@ -24,7 +23,6 @@ export default function RootLayout({
       <body
         className={`${rokkitt.variable} ${generalSans.variable} lg:min-h-screen lg:max-h-screen flex flex-col relative`}
       >
-        {/* <PreLoader /> */}
         <Navbar />
         <main className="bg-white w-[calc(100%-80)] overflow-y-auto mx-4 lg:mx-80 flex flex-grow justify-center font-generalSans border-l-[0.8px] border-r-[0.8px] border-primary">
           {children}
