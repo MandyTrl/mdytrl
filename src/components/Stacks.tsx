@@ -6,12 +6,15 @@ export const Stacks = () => {
   const stacksWithUniqueIds = stacks.map((stack) => ({ ...stack, id: uuidv4() }))
 
   return (
-    <div className="relative w-fit lg:h-[650px] max-h-[840px] overflow-hidden no-scrollbar border-primary mr-8">
+    <div className="relative w-fit h-[860px] overflow-hidden no-scrollbar mr-8">
       <div>
         <div className="animate-scrolling h-fit">
           {stacksWithUniqueIds.map((stack: stackType) => {
             return (
-              <div key={`${stack.name}_${stack.id}`} className="p-4 my-2 flex flex-col justify-around items-center">
+              <div
+                key={`${stack.name}_${stack.id}`}
+                className="p-4 my-2 flex flex-col justify-around items-center border-[0.5px] border-primary rounded-md"
+              >
                 <Image src={stack.logo} alt={`logo_${stack.name}`} width={40} height={40} className="opacity-90" />
                 <p className="text-sm mt-4 text-gray-primary">{stack.name}</p>
               </div>
@@ -21,7 +24,10 @@ export const Stacks = () => {
         <div className="animate-scrolling h-fit" aria-hidden={true}>
           {stacksWithUniqueIds.map((stack: stackType) => {
             return (
-              <div key={`${stack.id}_${stack.name}`} className="p-4 my-2 flex flex-col justify-around items-center">
+              <div
+                key={`${stack.id}_${stack.name}`}
+                className="p-4 my-2 flex flex-col justify-around items-center  border-[0.5px] border-primary rounded-md"
+              >
                 <Image src={stack.logo} alt={`logo_${stack.name}`} width={40} height={40} className="opacity-90" />
                 <p className="text-sm mt-4 text-gray-primary">{stack.name}</p>
               </div>

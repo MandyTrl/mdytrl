@@ -21,7 +21,7 @@ const config: Config = {
       },
       boxShadow: {
         footer: 'rgba(0, 0, 0, 0.5) 0px 10px 12px 0px inset;',
-        'footer-btn': '0 20px 15px -20px rgba(0,0,0,0.2) inset, 25px 0 10px -25px rgba(0,0,0,0.3) inset'
+        'footer-btn': '0 15px 5px -15px rgba(0,0,0,0.3) inset, 15px 0 8px -10px rgba(0,0,0,0.3) inset'
       }
     }
   },

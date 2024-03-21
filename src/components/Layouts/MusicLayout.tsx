@@ -18,8 +18,8 @@ export const MusicLayout = () => {
         </h4>
       </div>
 
-      <div className="w-full my-8 lg:my-0 lg:relative lg:pt-[580px]">
-        <div className="lg:m-auto lg:flex lg:flex-row lg:absolute lg:left-[41.5%] lg:-right-[30%] lg:top-[25%] lg:-translate-x-1/2">
+      <div className="w-full my-8 lg:my-0 lg:relative lg:pt-[500px]">
+        <div className="lg:m-auto lg:flex lg:flex-row lg:absolute lg:left-[41.5%] lg:-right-[30%] lg:top-[35%] lg:-translate-x-1/2">
           {musics.map((el, idx) => {
             return <MusicCard key={idx} index={idx} datas={el} numberOfItems={musics.length} />
           })}

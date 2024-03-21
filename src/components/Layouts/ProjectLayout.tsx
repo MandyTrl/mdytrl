@@ -18,7 +18,7 @@ export const ProjectLayout = () => {
 
   return (
     <div>
-      <div className="relative w-fit lg:h-[650px] h-[350px] lg:w-full overflow-hidden rounded-b-2xl shadow-md">
+      <div className="relative w-fit lg:h-[550px] h-[350px] lg:w-full overflow-hidden rounded-b-2xl shadow-md">
         <img
           src={project.images[0]}
           alt={`screenshot-${project.images[0]}`}
@@ -26,7 +26,7 @@ export const ProjectLayout = () => {
         />
       </div>
 
-      <div className="my-20">
+      <div className="my-20 px-14">
         <div className="flex mt-4">
           <h1 className="font-bold text-5xl lg:text-6xl uppercase text-primary">{project.name}</h1>
           {project.repo && (

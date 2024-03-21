@@ -15,7 +15,7 @@ export const MusicCard = ({ datas, index, numberOfItems }: MusicCardPropsType) =
 
   return isDesktop ? (
     <div
-      className="transform-all duration-500 ease-in-out opacity-80 lg:skew-y-6 drop-shadow-sm hover:cursor-pointer lg:hover:-translate-y-[120px] hover:opacity-90"
+      className="transform-all duration-500 ease-in-out opacity-80 lg:skew-y-6 drop-shadow-sm hover:cursor-pointer lg:hover:-translate-y-[130px] hover:opacity-90"
       style={{ zIndex: numberOfItems - index, translate: translateX }}
     >
       <iframe

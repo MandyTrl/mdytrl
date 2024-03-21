@@ -23,31 +23,30 @@
 }
 
 body {
-  /* background-color: #f7fafc; */
-  background-color: #ffff;
+  /* background-color: #fcfbf7; */
+  background-color: var(--yel-secondary);
+  /* background-color: #ffff; */
   color: var(--primary);
-  scrollbar-color: var(--yellow-color);
 }
 
-/* style scrollbar */
-body::-webkit-scrollbar {
-  width: 8px;
-  overflow: scroll;
+/* style scrollbar sur main*/
+/* main {
+  overflow-y: auto;
 }
 
-body::-webkit-scrollbar-track {
-  background: #ffff;
-  border-radius: 20px;
+main::-webkit-scrollbar {
+  width: 6px;
 }
 
-body::-webkit-scrollbar-thumb {
+main::-webkit-scrollbar-track {
+  background: #fff; 
+  border-radius: 5px;
+}
+
+main::-webkit-scrollbar-thumb {
   background: var(--yellow-color);
-  border-radius: 20px;
-}
-
-.no-scroll {
-  overflow: hidden;
-}
+  border-radius: 5px;
+} */
 
 /* animation for stacks cards container */
 @keyframes scroll {
@@ -103,6 +102,6 @@ body::-webkit-scrollbar-thumb {
 .separator {
   position: relative;
   border: none;
-  height: 0.8px;
+  height: 0.5px;
   background-color: var(--primary);
 }
