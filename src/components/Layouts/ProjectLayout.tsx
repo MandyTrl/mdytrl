@@ -19,17 +19,17 @@ export const ProjectLayout = () => {
 
   return (
     <div>
-      <div className="relative h-[250px] lg:h-[350px] lg:w-[550px]  w-full overflow-hidden rounded-b-2xl shadow-md">
+      <div className="relative w-full h-[200px] lg:h-[550px] overflow-hidden rounded-b-2xl shadow-md">
         <Image
           src={project.images[0]}
           alt={`screenshot-${project.images[0]}`}
-          width={550}
-          height={350}
-          className="absolute top-0 w-full hover:scale-110 hover:cursor-pointer transform duration-500"
+          width={1500}
+          height={550}
+          className="absolute top-0 w-full h-fit hover:scale-110 hover:cursor-pointer transform duration-500"
         />
       </div>
 
-      <div className="my-8 lg:my-20 px-14">
+      <div className="my-6 lg:my-20 px-6 lg:px-14">
         <div className="flex lg:mt-4">
           <h1 className="font-bold text-3xl lg:text-6xl uppercase text-primary">{project.name}</h1>
           {project.repo && (
@@ -48,12 +48,12 @@ export const ProjectLayout = () => {
         <ul className="lg:w-full flex items-center border-y-[0.5px] border-solid border-gray-primary py-4 my-4 lg:py-6 lg:my-6">
           {project.stacks.map((stack: string, idx: number) => {
             return stack !== lastStack ? (
-              <li key={idx} className="flex items-center uppercase tracking-wider font-rokkitt text-base lg:text-2xl">
+              <li key={idx} className="flex items-center uppercase tracking-wider font-rokkitt lg:text-2xl">
                 <span className="text-xs px-[10px] text-gray-primary">❈</span>
                 {stack}
               </li>
             ) : (
-              <li key={idx} className="flex items-center uppercase tracking-wider font-rokkitt text-base lg:text-2xl">
+              <li key={idx} className="flex items-center uppercase tracking-wider font-rokkitt lg:text-2xl">
                 <span className="text-xs px-[10px] text-gray-primary">❈</span>
                 {stack}
                 <span className="text-xs pl-[10px] text-gray-primary">❈</span>
@@ -80,7 +80,7 @@ export const ProjectLayout = () => {
             )}
           </div>
 
-          <div className=" text-gray-primary py-8 text-lg italic">
+          <div className=" text-gray-primary py-8 lg:text-lg italic">
             <p>{project.description}</p>
           </div>
         </div>
