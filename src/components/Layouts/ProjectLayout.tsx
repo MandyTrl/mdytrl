@@ -19,17 +19,19 @@ export const ProjectLayout = () => {
 
   return (
     <div>
-      <div className="relative w-fit lg:h-[550px] h-[350px] lg:w-full overflow-hidden rounded-b-2xl shadow-md">
-        <img
+      <div className="relative h-[250px] lg:h-[350px] lg:w-[550px]  w-full overflow-hidden rounded-b-2xl shadow-md">
+        <Image
           src={project.images[0]}
           alt={`screenshot-${project.images[0]}`}
-          className="absolute top-0 w-fit hover:scale-110 hover:cursor-pointer transform duration-500"
+          width={550}
+          height={350}
+          className="absolute top-0 w-full hover:scale-110 hover:cursor-pointer transform duration-500"
         />
       </div>
 
-      <div className="my-20 px-14">
-        <div className="flex mt-4">
-          <h1 className="font-bold text-5xl lg:text-6xl uppercase text-primary">{project.name}</h1>
+      <div className="my-8 lg:my-20 px-14">
+        <div className="flex lg:mt-4">
+          <h1 className="font-bold text-3xl lg:text-6xl uppercase text-primary">{project.name}</h1>
           {project.repo && (
             <Link href={project.repo} target="_blank" className="group hover:cursor-pointer ml-2 text-primary">
               <Image

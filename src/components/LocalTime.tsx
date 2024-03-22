@@ -8,8 +8,8 @@ export const LocalTime = () => {
   const time = today.getHours() + ':' + today.getMinutes()
 
   return (
-    <aside className="w-full px-8 border-y-[0.5px] border-primary">
-      <p className="font-rokkitt font-thin text-xl lg:text-3xl my-4 lg:my-6">
+    <aside className="w-full px-6 border-y-[0.5px] border-primary">
+      <p className="font-rokkitt font-thin text-lg lg:text-3xl my-4 lg:my-6">
         {date} {month}. {year} {time}
       </p>
     </aside>

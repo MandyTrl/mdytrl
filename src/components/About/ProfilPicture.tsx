@@ -14,7 +14,7 @@ export default function ProfilPicture() {
   return (
     <div className="lg:w-full flex flex-col lg:flex-row lg:justify-around mb-16 m-4 lg:m-0 group relative lg:px-20">
       <Image
-        alt="Mandy Thorel, photo en noir et blanc"
+        alt="photo de Mandy Thorel"
         src={imageUrl}
         width={490}
         height={730}
