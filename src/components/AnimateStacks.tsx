@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { v4 as uuidv4 } from 'uuid'
 import { stackType, stacks } from '@/utils/datas/stacks'
 
-export const Stacks = () => {
+export const AnimateStacks = () => {
   const stacksWithUniqueIds = stacks.map((stack) => ({ ...stack, id: uuidv4() }))
 
   return (

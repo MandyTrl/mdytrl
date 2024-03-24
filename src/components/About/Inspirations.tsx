@@ -7,7 +7,7 @@ import clsx from 'clsx'
 import Link from 'next/link'
 
 export const Inspirations = () => {
-  const containerRef = useRef(null)
+  const containerRef = useRef<any>(null)
   const styleLabel =
     'z-20 absolute w-fit flex items-center py-1 px-3 font-rokkitt bg-white border-[0.5px] border-primary'
 
