@@ -10,7 +10,7 @@ export const Navbar = () => {
   const pathname = usePathname()
 
   return (
-    <nav className="w-full min-h-[90px] bg-white flex items-center justify-end px-4 border-b-[0.5px] border-primary">
+    <nav className="fixed lg:static z-50 lg:z-0 w-full min-h-[60px] lg:min-h-[90px] bg-white flex items-center justify-end px-4 border-b-[0.5px] border-primary">
       <ul className="[&>*]:px-2 flex uppercase font-generalSans">
         <li>
           <Link

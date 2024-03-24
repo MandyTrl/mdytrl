@@ -19,19 +19,19 @@ export const ProjectLayout = () => {
 
   return (
     <div>
-      <div className="relative w-full h-[200px] lg:h-[550px] overflow-hidden rounded-b-2xl shadow-md">
+      <div className="relative w-[350px] lg:w-full h-[200px] lg:h-[550px] overflow-hidden rounded-b-2xl shadow-md">
         <Image
           src={project.images[0]}
           alt={`screenshot-${project.images[0]}`}
           width={1500}
           height={550}
-          className="absolute top-0 w-full h-fit hover:scale-110 hover:cursor-pointer transform duration-500"
+          className="object-cover w-full h-fit hover:scale-110 hover:cursor-pointer transform duration-500"
         />
       </div>
 
       <div className="my-6 lg:my-20 px-6 lg:px-14">
         <div className="flex lg:mt-4">
-          <h1 className="font-bold text-3xl lg:text-6xl uppercase text-primary">{project.name}</h1>
+          <h1 className="font-bold text-xl lg:text-6xl uppercase text-primary">{project.name}</h1>
           {project.repo && (
             <Link href={project.repo} target="_blank" className="group hover:cursor-pointer ml-2 text-primary">
               <Image
@@ -45,18 +45,18 @@ export const ProjectLayout = () => {
           )}
         </div>
 
-        <ul className="lg:w-full flex items-center border-y-[0.5px] border-solid border-gray-primary py-4 my-4 lg:py-6 lg:my-6">
+        <ul className="lg:w-full flex flex-wrap lg:flex-row items-center border-y-[0.5px] border-solid border-gray-primary py-4 my-4 lg:py-6 lg:my-6">
           {project.stacks.map((stack: string, idx: number) => {
             return stack !== lastStack ? (
               <li key={idx} className="flex items-center uppercase tracking-wider font-rokkitt lg:text-2xl">
-                <span className="text-xs px-[10px] text-gray-primary">❈</span>
+                <span className="text-[8px] lg:text-xs  px-1 lg:px-[10px] text-gray-primary">❈</span>
                 {stack}
               </li>
             ) : (
-              <li key={idx} className="flex items-center uppercase tracking-wider font-rokkitt lg:text-2xl">
-                <span className="text-xs px-[10px] text-gray-primary">❈</span>
+              <li key={idx} className="flex items-center uppercase tracking-wider font-rokkitt text-sm lg:text-2xl">
+                <span className="text-[8px] lg:text-xs px-1 lg:px-[10px] text-gray-primary">❈</span>
                 {stack}
-                <span className="text-xs pl-[10px] text-gray-primary">❈</span>
+                <span className="text-[8px] lg:text-xs  pl-1 lg:pl-[10px] text-gray-primary">❈</span>
               </li>
             )
           })}
@@ -80,7 +80,7 @@ export const ProjectLayout = () => {
             )}
           </div>
 
-          <div className=" text-gray-primary py-8 lg:text-lg italic">
+          <div className=" text-gray-primary py-4 lg:py-8 lg:text-lg italic">
             <p>{project.description}</p>
           </div>
         </div>

@@ -11,17 +11,17 @@ export const ProjectsList = () => {
         return (
           <div
             key={index}
-            className="w-full h-20 lg:h-28 element-hover group flex items-center justify-between hover:cursor-pointer last:mb-10 last:border-b-[0.8px] border-t-[0.8px] border-primary"
+            className="w-full h-[70px] lg:h-28 element-hover group flex items-center justify-between hover:cursor-pointer last:mb-10 last:border-b-[0.8px] border-t-[0.8px] border-primary"
           >
             <Link href={`/projects/${project.name}`} className="w-full ml-1">
               <div className="flex items-center justify-between">
-                <p className="flex items-center uppercase transform duration-300 group-hover:scale-[1.30] lg:text-lg group-hover:translate-x-[12%]">
+                <p className="w-fit flex items-center uppercase transform duration-300 group-hover:scale-[1.1] lg:group-hover:scale-[1.30] lg:text-lg group-hover:translate-x-[12%]">
                   <span className="w-fit group-hover:opacity-100 opacity-0 duration-300 text-yel-primary mr-1">•</span>{' '}
                   {project.name}
                 </p>
 
                 <p className="flex items-center mr-1">
-                  <span className="w-full mr-4 opacity-0 group-hover:opacity-100 transform duration-300 group-hover:translate-x-[0%] translate-x-[50%]">
+                  <span className="w-full mr-4 text-sm lg:text-base opacity-0 group-hover:opacity-100 transform duration-300 group-hover:translate-x-[0%] translate-x-[50%]">
                     Voir le projet
                   </span>
                   <Image
@@ -29,7 +29,7 @@ export const ProjectsList = () => {
                     alt={`go to the project ${project.name}`}
                     width={18}
                     height={18}
-                    className="mr-2"
+                    className="w-3 lg:w-[18px] mr-2"
                   />
                 </p>
               </div>

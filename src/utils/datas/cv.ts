@@ -14,20 +14,22 @@ export const school: SchoolExperiencesType[] = [
     year: '2022',
     certification: "Titre RNCP de niveau VI : Cheffe de Projet de Développement d'Application Web & Mobile",
     school: 'La Capsule'
-  },
-  {
-    year: '2015',
-    certification: 'Titre RNCP de niveau IV : Secrétaire - Assistante Médicale',
-    school: 'Avlis'
-  },
-  {
-    year: '2009 à 2011',
-    certification: [
-      'Licence Géographie, société et aménagement du territoire',
-      "Licence Histoire de l'art et archéologie"
-    ],
-    school: 'Université Paris X, Nanterre'
   }
+  // {
+  //   year: '2015',
+  //   certification: 'Titre RNCP de niveau IV : Secrétaire - Assistante Médicale',
+  //   school: 'Avlis'
+  // },
+  // {
+  //   year: '2010 - 2011',
+  //   certification: ['Licence Géographie, société et aménagement du territoire'],
+  //   school: 'Université Paris X, Nanterre'
+  // },
+  // {
+  //   year: '2009 - 2010',
+  //   certification: ["Licence Histoire de l'art et archéologie"],
+  //   school: 'Université Paris X, Nanterre'
+  // }
 ]
 
 export type ProfessionalExperiencesType = {
@@ -43,7 +45,7 @@ export type ExperienceType = SchoolExperiencesType | ProfessionalExperiencesType
 
 export const professional: ProfessionalExperiencesType[] = [
   {
-    year: 'Dec. 2022, Poste Actuel',
+    year: '2022 - 2024',
     job: 'Développeuse fullstack',
     company: 'Free',
     description: 'Développement et maintien des projets de communication internes et externes de la société',
@@ -71,7 +73,7 @@ export const professional: ProfessionalExperiencesType[] = [
     ]
   },
   {
-    year: 'Avril 2018 à Mai 2022',
+    year: '2018 - 2022',
     job: 'Quality Specialist & KYC Ambassador',
     company: 'Just Eat Takeaway',
     description:
@@ -85,7 +87,7 @@ export const professional: ProfessionalExperiencesType[] = [
     ]
   },
   {
-    year: 'Mai 2014 à Avril 20216',
+    year: '2014 - 2016',
     job: 'Secrétaire Médicale',
     company: 'SCM Groupe de Spécialistes Médicaux',
     description:

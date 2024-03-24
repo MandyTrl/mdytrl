@@ -43,7 +43,7 @@ export const rokkitt = localFont({
       style: 'normal'
     }
   ],
-  variable: '--font-Rokkitt'
+  variable: '--font-rokkitt'
 })
 
 export const generalSans = localFont({

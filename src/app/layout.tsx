@@ -18,13 +18,13 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
-        <link rel="icon" href="/assets/logomdytrl.svg" />
+        <link rel="icon" href="x/assets/logomdytrl.svg" />
       </head>
       <body
         className={`${rokkitt.variable} ${generalSans.variable} lg:min-h-screen lg:max-h-screen flex flex-col relative`}
       >
         <Navbar />
-        <main className="bg-white w-[calc(100%-80)] overflow-y-auto mx-4 lg:mx-80 flex flex-grow justify-center font-generalSans border-l-[0.8px] border-r-[0.8px] border-primary">
+        <main className="bg-white w-[calc(100%-80)] overflow-y-auto mx-4 lg:mx-[21rem] flex flex-grow justify-center font-generalSans border-l-[0.8px] border-r-[0.8px] border-primary">
           {children}
         </main>
         <div className="absolute hidden lg:flex lg:bottom-28 bg-transparent w-full justify-between">

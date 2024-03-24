@@ -12,7 +12,7 @@ export const skills: skillsType[] = [
   {
     name: 'UX/UI Design',
     description:
-      'Interfaces utilisateur efficaces, esthétiques et techniquement réalisables en ayant conscience des contraintes techniques et des possibilités de développement.'
+      "Réalisation d'interfaces utilisateur efficaces et esthétiques en ayant conscience des contraintes techniques et des possibilités de développement."
   },
   {
     name: 'SEO & Accessibilité',

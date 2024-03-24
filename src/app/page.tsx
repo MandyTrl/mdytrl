@@ -6,7 +6,7 @@ import { MagneticBtn } from '@/components/UI/MagneticBtn'
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col mt-14 lg:mt-0">
       <section id="home" className="flex flex-col items-center justify-start">
         <div className="relative h-full flex flex-col items-center">
           <div className="relative w-full h-[195px] lg:w-[850px] lg:h-[450px] overflow-hidden">
@@ -35,18 +35,18 @@ export default function Home() {
 
       <section id="projects" className="w-full">
         <div>
-          <div className="flex items-center justify-center lg:justify-start pt-10 lg:pt-36 pb-10 lg:mb-10 mb-6">
-            <div className="border-[0.5px] border-primary">
-              <div className="relative h-28 lg:h-36 w-28 lg:w-36 border-8 border-white overflow-hidden">
+          <div className="flex items-center justify-start pt-16 lg:pt-36 pb-10 lg:mb-10 ml-3 lg:ml-0">
+            <div className="border-[0.5px] border-primary rounded-full">
+              <div className="relative h-24 lg:h-36 w-24 lg:w-36 border-[6px] lg:border-8 border-white overflow-hidden rounded-full">
                 <img
                   src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjU2d2xmNGNtdWVoYnAwMHM1cHdoczZzYTBhc3FwOHg5aGh0NnZvYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VbnUQpnihPSIgIXuZv/giphy.gif"
                   alt=""
-                  className="absolute top-0 left-0 w-fit"
+                  className="absolute top-0 left-0 w-fit rounded-full"
                 />
               </div>
             </div>
 
-            <h1 className="lg:text-8xl text-5xl text-primary pl-2">Projets</h1>
+            <h1 className="text-4xl lg:text-8xl text-primary pl-2">Projets</h1>
           </div>
           <div className="w-full flex flex-col lg:flex-row items-center">
             <ProjectsList />
