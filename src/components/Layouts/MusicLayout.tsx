@@ -5,18 +5,10 @@ import { MusicCard } from '@/components/MusicCard'
 export const MusicLayout = () => {
   return (
     <section id="musics" className="w-full lg:mt-5">
-      <div className="w-2/3 pb-2">
-        <h4 className="tracking-wide font-thin">
-          Et le meilleur des oreilles pour se mettre de bonne humeur
-          <Image
-            src="/assets/icons/listening-to-music.svg"
-            alt="top music spotify"
-            width={30}
-            height={30}
-            className="mx-1 mb-4 inline"
-          />
-          ..
-        </h4>
+      <div className="flex items-end justify-start lg:w-2/3 pb-2">
+        <p className="tracking-wide font-thin">Et le meilleur des oreilles pour se mettre de bonne humeur</p>
+        <Image src="/assets/icons/listening-to-music.svg" alt="top music spotify" width={30} height={30} />
+        <p>..</p>
       </div>
 
       <div className="w-full my-8 lg:my-0 lg:relative lg:pt-[450px]">

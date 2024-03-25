@@ -36,7 +36,7 @@ export const MagneticBtn = ({ title }: BtnTypeProps) => {
     <div
       id="magnetic_container"
       ref={btnRef}
-      className="z-40 hidden lg:flex absolute top-[20%] lg:right-[4rem] duration-100 ease-linear hover:animate-none"
+      className="z-40 hidden md:flex absolute top-[20%] md:right-[4rem] duration-100 ease-linear hover:animate-none"
     >
       <button
         id="magnetic_btn"

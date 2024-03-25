@@ -9,7 +9,7 @@ export const LocalTime = () => {
 
   return (
     <aside className="w-full px-6 border-y-[0.5px] border-primary">
-      <p className="font-rokkitt font-thin text-lg lg:text-3xl my-4 lg:my-6">
+      <p className="font-rokkitt font-thin text-lg md:text-3xl my-4 md:my-6">
         {date} {month}. {year} {time}
       </p>
     </aside>

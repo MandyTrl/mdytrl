@@ -21,10 +21,10 @@ export default function RootLayout({
         <link rel="icon" href="x/assets/logomdytrl.svg" />
       </head>
       <body
-        className={`${rokkitt.variable} ${generalSans.variable} lg:min-h-screen lg:max-h-screen flex flex-col relative`}
+        className={`${rokkitt.variable} ${generalSans.variable} md:min-h-screen md:max-h-screen flex flex-col relative`}
       >
         <Navbar />
-        <main className="bg-white w-[calc(100%-80)] overflow-y-auto mx-4 lg:mx-[21rem] flex flex-grow justify-center font-generalSans border-l-[0.8px] border-r-[0.8px] border-primary">
+        <main className="bg-white w-[calc(100%-80)] overflow-y-auto mx-4 md:mx-6 lg:mx-[21rem] flex flex-grow justify-center font-generalSans border-l-[0.8px] border-r-[0.8px] border-primary">
           {children}
         </main>
         <EncartLayout />
