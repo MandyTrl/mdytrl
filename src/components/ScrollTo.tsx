@@ -1,5 +1,6 @@
 'use client'
-import useScrollTo from '@/utils/useScrollTo'
+
+import useScrollTo from '@/utils/hooks/useScrollTo'
 
 type ScrollToPropsType = {
   scrollTarget: number
