@@ -27,17 +27,17 @@ export default function Home() {
           </h1>
         </div>
 
-        <div className="w-full flex flex-col justify-center">
+        <div className="w-full md:px-8 flex flex-col justify-center">
           <LocalTime />
           <Intro />
         </div>
       </section>
 
-      <section id="projects" className="w-full">
+      <section id="projects" className="w-full md:px-16">
         <div>
-          <div className="flex items-center justify-start pt-16 md:pt-36 pb-10 md:mb-10 ml-3 md:ml-0">
+          <div className="flex items-center justify-start pt-16 md:pt-36 pb-10 md:mb-4 lg:mb-10 ml-3 md:ml-0">
             <div className="border-[0.5px] border-primary rounded-full">
-              <div className="relative h-24 md:h-36 w-24 md:w-36 border-[6px] md:border-8 border-white overflow-hidden rounded-full">
+              <div className="relative h-24 md:h-28 lg:h-36 w-24 md:w-28 lg:w-36 border-[6px] lg:border-8 border-white overflow-hidden rounded-full">
                 <img
                   src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjU2d2xmNGNtdWVoYnAwMHM1cHdoczZzYTBhc3FwOHg5aGh0NnZvYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VbnUQpnihPSIgIXuZv/giphy.gif"
                   alt=""
@@ -46,7 +46,7 @@ export default function Home() {
               </div>
             </div>
 
-            <h1 className="text-4xl md:text-8xl text-primary pl-2">Projets</h1>
+            <h1 className="text-4xl md:text-6xl lg:text-8xl text-primary pl-2">Projets</h1>
           </div>
           <div className="w-full flex flex-col md:flex-row items-center">
             <ProjectsList />
