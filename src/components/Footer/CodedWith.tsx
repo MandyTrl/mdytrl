@@ -5,8 +5,6 @@ export const CodedWith = () => {
   return (
     <div className="w-full h-full flex flex-col items-center border-t-[0.5px] border-primary px-4 pt-8 pb-4 lg:py-6">
       <div className="lg:w-full flex flex-col lg:flex-row lg:justify-between lg:px-2">
-        <Contact />
-
         <div id="coded_with_container" className="lg:w-fit flex flex-col lg:flex-row items-center lg:px-4">
           <p className="uppercase font-rokkitt lg:text-xl font-thin px-3 py-1 lg:p-0 mt-16 lg:mr-10 lg:mt-0 mb-5 lg:mb-0 tracking-[0.2em] lg:tracking-[0.4em] border-gray-primary border-[0.5px] lg:border-0">
             coded with

@@ -9,10 +9,8 @@ export const EncartLayout = () => {
         <p className="text-xs">Me contacter </p>
       </div>
 
-      <div className="flex flex-col items-end pr-4">
+      <div className="flex flex-col ml-4">
         <Stacks />
-        <p className="text-sm">©Mandy Thorel</p>
-        <p className="text-[10px]">last update : march 2024</p>
       </div>
     </div>
   )
