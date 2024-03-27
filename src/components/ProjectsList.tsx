@@ -21,7 +21,7 @@ export const ProjectsList = () => {
                 </p>
 
                 <p className="flex items-center mr-1">
-                  <span className="w-full mr-4 text-sm lg:text-base opacity-0 group-hover:opacity-100 transform duration-300 group-hover:translate-x-[0%] translate-x-[50%]">
+                  <span className="w-full mr-4 text-sm opacity-0 group-hover:opacity-100 transform duration-300 group-hover:translate-x-[0%] translate-x-[50%]">
                     Voir le projet
                   </span>
                   <Image

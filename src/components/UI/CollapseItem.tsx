@@ -11,7 +11,7 @@ export type CollapseItemTypeProps = {
 
 export const CollapseItem = ({ datas, isProfessionalExperience }: CollapseItemTypeProps) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
-  const categoryStyle = 'italic normal-case font-rokkitt font-thin border-b-[0.5px] border-primary'
+  const categoryStyle = 'italic normal-case font-rokkitt font-extralight border-b-[0.5px] border-primary'
 
   const handleClick = (idx: number) => {
     setOpenIndex(openIndex === idx ? null : idx)

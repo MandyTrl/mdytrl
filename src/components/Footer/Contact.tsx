@@ -5,7 +5,7 @@ export const Contact = () => {
   return (
     <div className="w-fit flex items-center justify-center md:justify-end">
       <a href="mailto:thorelmandy@gmail.com">
-        <p className="group flex items-center first-line:w-fit py-2 md:py-4 pl-2 pr-3 md:px-6 italic border-[0.5px] border-gray-primary bg-gray-secondary bg-opacity-5 rounded-full hover:cursor-pointer hover:border-primary hover:shadow-footer-btn hover:bg-opacity-20">
+        <p className="group flex items-center first-line:w-fit py-2 pl-3 pr-4 italic border-[0.5px] border-gray-primary bg-gray-secondary bg-opacity-5 rounded-full hover:cursor-pointer hover:border-primary hover:shadow-footer-btn hover:bg-opacity-20">
           <Image
             src="/assets/icons/send.svg"
             alt=""

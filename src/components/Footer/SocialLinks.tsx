@@ -8,7 +8,7 @@ export const SocialLinks = () => {
         return (
           <div
             key={el.name}
-            className="mx-1 p-[11px] md:p-4 border-[0.5px] bg-gray-secondary bg-opacity-5 border-gray-primary hover:cursor-pointer hover:border-primary hover:shadow-footer-btn  hover:bg-opacity-20 rounded-full ease-in-out duration-300"
+            className="mx-1 p-[11px] border-[0.5px] bg-gray-secondary bg-opacity-5 border-gray-primary hover:cursor-pointer hover:border-primary hover:shadow-footer-btn  hover:bg-opacity-20 rounded-full ease-in-out duration-300"
           >
             <a href={el.link}>
               <Image
@@ -16,7 +16,7 @@ export const SocialLinks = () => {
                 alt={`contact_link_mandy_thorel_on_${el.name}`}
                 width={24}
                 height={24}
-                className="w-5 h-5 md:w-6 md:h-6"
+                className="w-5 h-5"
               />
             </a>
           </div>

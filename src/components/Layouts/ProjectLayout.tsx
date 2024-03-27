@@ -83,7 +83,7 @@ export const ProjectLayout = () => {
             )}
           </div>
 
-          <div className=" text-gray-primary py-4 lg:py-8 lg:text-lg italic">
+          <div className=" text-gray-primary py-4 lg:py-8 lg:text-base italic">
             <p>{project.description}</p>
           </div>
         </div>

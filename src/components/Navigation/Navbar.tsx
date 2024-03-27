@@ -14,7 +14,7 @@ export const Navbar = () => {
   console.log(pathname)
 
   return (
-    <nav className="fixed lg:static z-50 lg:z-0 w-full min-h-[60px] lg:min-h-[80px] bg-white flex items-center justify-end px-4 border-b-[0.5px] border-primary">
+    <nav className="fixed lg:static z-50 lg:z-0 w-full min-h-[60px] lg:min-h-[70px] bg-white flex items-center justify-end px-4 border-b-[0.5px] border-primary">
       <ul className="[&>*]:px-2 flex uppercase font-generalSans">
         <li>
           <Link

@@ -10,8 +10,7 @@ export type MusicCardPropsType = {
 
 export const MusicCard = ({ datas, index, numberOfItems }: MusicCardPropsType) => {
   const isDesktop = usIsDesktop()
-  const n = 6
-  const translateX = `-${index * n}0%`
+  const translateX = `-${index * 16}0px`
 
   return isDesktop ? (
     <div

@@ -22,7 +22,7 @@ export const Inspirations = () => {
   }, [])
 
   return (
-    <div ref={containerRef} className="w-full overflow-x-scroll">
+    <div ref={containerRef} className="w-full h-fit overflow-x-auto">
       <div className="flex gap-x-4">
         {inspirations.map((el, idx) => {
           const pinLabel = el.label === 'Voyager' || el.label === 'Randonner'
@@ -43,9 +43,7 @@ export const Inspirations = () => {
                 />
               </div>
 
-              <p className="w-full tracking-wide font-rokkitt text-[16px] text-gray-primary mt-2 py-2 border-[0.5px] border-gray-primary rounded-md">
-                {el.label}
-              </p>
+              <p className="w-full tracking-wide text-base text-gray-primary mt-2 rounded-md">{el.label}</p>
 
               {pinLabel && (
                 <div
@@ -56,18 +54,18 @@ export const Inspirations = () => {
                   )}
                 >
                   <img src="/assets/icons/pin.svg" alt="" className="w-2 lg:w-3 mr-1" />
-                  <p className="text-xs lg:text-base">{isTravelLabel ? 'Kyoto' : 'Les Alpes'}</p>
+                  <p className="text-xs lg:text-sm">{isTravelLabel ? 'Kyoto' : 'Les Alpes'}</p>
                 </div>
               )}
 
               {isRestoLabel && (
-                <div className="group hover:cursor-pointer mt-2 w-full flex flex-col items-center py-1 rounded-md bg-yel-secondary text-xs lg:text-sm">
+                <div className="group hover:cursor-pointer mt-2 w-full flex flex-col items-center py-1 rounded-md bg-yel-secondary text-xs lg:text-sm hover:bg-yel-primary duration-150 ease-linear">
                   <Link href="https://mapstr.com/user/mdy.trl" target="_blank">
                     <div className="flex">
                       <p className="mr-1">Mon compte Mapstr</p>
-                      <img src="/assets/icons/burger.svg" alt="" className="w-3 lg:w-4 mr-1" />
+                      <img src="/assets/icons/burger.svg" alt="" className="w-3 lg:w-4 mr-1 duration-150 ease-linear" />
                     </div>
-                    <span className="underline group-hover:text-blue-500 duration-150 ease-linear">@mdy.trl</span>
+                    <span className="underline group-hover:text-blue-500">@mdy.trl</span>
                   </Link>
                 </div>
               )}
